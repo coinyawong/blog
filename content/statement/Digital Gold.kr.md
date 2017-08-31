@@ -22,49 +22,46 @@ categories = [
 이것은 사토시의 초기 비전으로 되돌아가서, 지금의(구) 뱅킹 시스템을 대체할 암호화화폐의 
 대량 유통을 위한 새로운 길을 여는 것입니다.
 
-The unique features of Skycoin set it apart from other cryptocurrencies. Unlike most recent
-coins, Skycoin has its own blockchain, consensus algorithm, and developers. Skycoin is not an
-Ethereum ERC20 token. It’s a third-generation cryptocurrency based on the brand-new consensus
-framework Obelisk. Skycoin uses Obelisk to decentralize transaction processing and approval.
+스카이코인은 다른 암호화화폐와 차별되는 독특한 특징이 있습니다.
+최근에 출시된 대부분의 코인들과는 다르게, 스카이코인은 자체 블록체인, 혁신적인 알고리즘, 
+그리고 개발자들이 있습니다. 스카이코인은 이더리움 기반 ERC20 토큰이 아닙니다. 
+Obelisk 라는 혁신적인 새로운 프레임워크를 기반으로 개발된 3세대 암호화 코인입니다.  
+스카이코인은 Obelisk를 사용하여 분산화 트랜젝션 처리 및 승인을 처리합니다.
 
-Skycoin’s revolutionary consensus algorithm lets transactions happen in seconds, not hours.
-This eliminates the performance gap between blockchain-based payments and centralized credit
-card networks. With zero transaction fees and lightning-fast speed, Skycoin represents the
-first viable alternative to centralized banking. It’s poised to do what Bitcoin couldn’t:
-transform the financial world for everyone across the globe.
+스카이코인의 혁신적인 컨센서스 알고리즘은 몇 시간이 아니라 단, 몇초 안에 트랜젝션을 처리할 수 있습니다.
+이를 통해 블럭체인 기반 결재와 중앙집중된 신용카드 네트워크 간의 성능차이를 해소할 수 있습니다.
+또한 0 트랜젝션 수수료와 초고속 스피드를 통해, 스카이코인은 중앙 은행을 대체할 첫번째 대안으로 떠오르고 있습니다.
+비트코인은 할 수 없었던 일을 할 준비가 되어있습니다. : 전세계 모든 사람들을 위해 금융계를 바꾸다.
 
 ![Skycoin transaction speed comparison chart](https://i.imgur.com/i0KNIIr.jpg)
 
-## Digital Gold: No Deflation
+## 디지털 자산: 디플레이션이 없다.
 
-Satoshi designed Bitcoin to protect wealth from inflation. Bitcoin is an immutable currency,
-with a finite supply capped at 21 million. By capping the number of Bitcoins that can exist,
-Satoshi hoped to create digital gold: he wanted to provide a premium investment that could
-return value over the years.
+사토시는 인플레이션으로부터 부(가치)를 보호하기 위해 비트코인을 설계했습니다. 비트코인은 불변의 화폐이며, 
+21만 개로 공급량이 고정되어 있습니다. 
+존재할 수 있는 비트코인의 수를 고정함으로써, 사토시는 디지털 금화를 창조하는 것을 희망했습니다.: 
+그는 시간이 지날수록 가치가 상승하는 프리미엄 투자를 제공하고 싶어했습니다.
 
-Unfortunately, Bitcoin had a flaw. Miners could receive new coins through the mechanism of
-block reward. The newly-created coins caused inflation, and control centralized into one or
-two large mining pools. The effect was a monopoly that destroyed the equalizing potential of
-Bitcoin.
+불행하게도, 비트코인은 결함이 있었습니다. 채굴자들은 블럭체인 보상체계를 통해 새로운 코인을 받을 수 있었습니다. 
+그 새로 만들어진 코인은 인플레이션을 일으켰고, 1, 2명의 거대 채굴 풀에 의해 중앙집중화 되었습니다.
+그 효과는 잠재적인(미채굴된) 비트코인의 균등배분 체계를 파괴시키는 독점으로 나타났습니다.
 
-Skycoin eliminates this flaw. Like Bitcoin, Skycoin is an immutable currency with an issuance
-capped at 100 million. But unlike Bitcoin, Skycoin features a redesigned consensus mechanism
-that removes the block reward. This change has profound consequences for users.
+스카이코인은 이 결함을 해소할 수 있습니다. 비트코인과 같이, 스카이코인은 발행량이 100만개로 고정된
+불변의 화폐입니다. 그러나 비트코인과는 달리, 스카이코인은 블럭 보상을 제거한 재설계된 합의 매커니즘을 특징으로 가지고 있습니다.
+이 변화는 사용자들에게 엄청난 결과를 가져옵니다.
 
-Without the block reward, miners have no incentive to monopolize and control the Skycoin
-network for personal gain. Skycoin’s design prevents the monopolization that persists in
-Bitcoin and Ethereum. By eliminating block reward, Skycoin prevents inflation and provides a
-more perfect “digital gold.”
+블럭 보상을 제외하고, 채굴자는 스카이코인 개인 수익을 위한 네트워크의 독점과 통제에서 아무런 이익을 얻을 수 없습니다.
+스카이코인은 현재 비트코인과 이더리움 같은 독점을 막기 위해 설계되었습니다.
+블럭 보상을 없앰으로써, 스카이코인은 인플레이션을 예방하고, 더 완벽한 "디지털 금화"를 제공합니다.
 
-Skycoin also eliminates transaction fees. Like block rewards, transaction fees plague other
-cryptocurrencies by creating monetary incentives. Miners strive to push up fees at the cost
-of the network. With no fees or block rewards, Skycoin offers an investment that can benefit
-all users fairly.
+스카이코인은 또한 트랜젝션 수수료를 없앴습니다.
+블럭보상과 마찬가지로, 트랜젝션 수수료는 다른 암호화코인이 금적적 인센티브를 생성하는 것을 방해합니다.
+채굴자는 네트워크의 비용을 올리기 위해 노력합니다.
+트랜젹션 수수료와 블럭 보상을 없앰으로써, 스카이코인은 모든 사용자가 공정하게 혜택을 볼 수 있는 투자를 제공합니다.
 
-When Skycoin users make transactions, they spend Coin Hours, not Skycoin. Coin Hours are
-shares of network resources that work like dividends. A user receives one Coin Hour for each
-hour they hold a Skycoin. The dividend pays out when Coin Hours are traded at exchange rates.
-100 million new Coin Hours are created each hour, and each transaction must burn a minimum of
-50% of its Coin Hour inputs. This creates scarcity and limits the number of Coin Hours in
-circulation to an equilibrium value. Through the Coin Hour system, Skycoin provides network
-transactions that prevent inflation and support fair use.
+스카이코인 사용자가 트랜젝션을 만들 때, 그들은 스카이코인이 아닌, 코인 Hours를 사용합니다.
+코인 Hours는 배당금과 비슷한 개념의 네트워크 자원의 몫입니다. 사용자들이 스카이코인을 보유하고 있는 시간마다 한 명의 사용자는 
+한 개의 코인 Hour를 받습니다. 코인 Hours가 거래소에서 거래되는 시세에 따라 코인Hours가 지급됩니다.
+100만 개의 새로운 코인 Hours가 매 시간마다 생성되고, 매 트랜젝션마다 생성된 코인 Hours의 최소 50%가
+태워집니다. 이것은 희소성을 발생시키고 코인 Hours수를 제한함에 따라 순환하는 코인 Hours의 가치를 동일하게 유지시킵니다.
+이 코인 Hours 시스템을 통하여, 스카이코인은 인플레이션을 방지하고 공정한 사용을 지원하는 네트워크 트랜젝션을 제공할 수 있습니다
