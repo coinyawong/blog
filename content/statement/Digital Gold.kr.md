@@ -1,5 +1,5 @@
 +++
-title = "Digital Gold"
+title = "디지털 자산"
 tags = [
     "Statement",
 ]
@@ -9,10 +9,11 @@ categories = [
 ]
 +++
 
-Satoshi’s original vision for Bitcoin was revolutionary. A global currency that existed above
-nations and out of the reach of trusts and inflation, Bitcoin should have rocked the
-financial world to its core. But the vision failed. Instead of ushering in a new era of
-decentralization, Bitcoin itself became centralized. Power concentrated into three major
+비트코인에 대한 사토시의 초기 비전은 혁명적이었습니다. 
+국가를 초월하고, 불신과 인플레이션을 넘어서는 글로벌 통화로써
+비트코인은 금융 시장을 핵심으로 삼아야했습니다. 하지만 그 비전은 실패했습니다.
+분산화의 새로운 시대를 열어주는 대신에 비트코인 가치 그 자체로 집중되었습니다.
+Power concentrated into three major
 mining pools. Transaction speed slowed to hours. Fees skyrocketed to their current $40 level.
 Today, it’s clear that Bitcoin didn’t deliver on its promise of a decentralized, peer-to-peer
 digital currency.
