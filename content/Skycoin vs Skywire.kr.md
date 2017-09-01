@@ -1,5 +1,5 @@
 +++
-title = "Skycoin vs Skywire"
+title = "스카이코인 대 스카이와이어"
 tags = [
     "Skywire",
 ]
@@ -57,4 +57,4 @@ Skywire는 스카이코인의 유틸리티 목적으로 제공하며,
 
 * *[Skywire 게시물](/categories/skywire/)*
 * *[스카이코인 개요](/overview/skycoin-overview/)*
-* *[Skywire - Skycoin Meshnet Project](/overview/skywire---skycoin-meshnet-project/)*
+* *[Skywire - 스카이코인 Meshnet 프로젝트](/overview/skywire---skycoin-meshnet-project/)*
