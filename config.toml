@@ -97,7 +97,7 @@ pygmentsStyle = "murphy"
   languageName = "Русский"
 
 [Languages.kr]
-  weight = 2
+  weight = 3
   title = "Skycoin 블로그"
   languageName = "한국어"
   
