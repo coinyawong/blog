@@ -1,5 +1,5 @@
 +++
-title = "Skycoin Community Links"
+title = "스카이코인 커뮤니티 링크 모음"
 tags = [
     "Community",
 ]
