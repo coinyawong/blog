@@ -149,111 +149,136 @@ categories = [
 
 경로 상 각 노드와 원 노드는 트래픽을 기록합니다. 그들은 대역폭 지불을 주기적으로 계산합니다.
 
-원 노드는 제 3의 공간 및 에스크로에서 동전을 보유하고 있습니다. A pseudonym account is created with the third party. Each node can verify reputation of the origin and payment ability through the third party, without learning identity of party. To the third party, each origin will appear as multiple unlinked pseudonym accounts. Each transit node will appear as multiple unlinked pseudonym accounts.
+원 노드는 제 3의 공간 및 에스크로에서 동전을 보관하고 있습니다. 익명 계정은 서드파티(제3자)와 함께 생성됩니다. 각 노드는 원 노드의 정보를 참조하지 않고 서드파티를 통해 원 노드 및 지불능력에 대해 확인할 수 있습니다. 서드파티에서 각 원본 계정은 여러 개의 연결되지 않은 익명 계정으로 표시됩니다. 각 중계 노드는 여러 개의 연결되지 않은 익명 계정으로 표시됩니다.
 
-Small transactions will be settled internally, in off-blockchain transactions. The off-blockchain transactions can be withdrawn into a newly generated, never used before address once the balance exceeds a threshold (currently 1 Skycoin). This reduces blockchain bloat and encourages microtransactions to be performed off-blockchain.
+소규모 거래는 블럭체인 트랜젝션 외부에서 내부거래로 처리될 것입니다. 오프-블록 체인 트랜잭션은 잔고가 최소값(현재 1 스카이코인)을 넘는 경우, 이전에 사용되지 않은 새로 생성된 주소로 출금할 수 있습니다.  이것은 블록체인의 팽창을 감소시키며 마이크로트랜잭션을 블록체인 외부에서 수행할 수 있도록 합니다.
 
-## Source Routing: Link Layer Encryption
+## 소스 라우팅 : 링크 계층 암호화
 
-There is a default link layer encryption between hops and default end-to-end encryption. A typical application will use link layer encryption, end-to-end encryption and then appropriate application layer encryption.
+이것은 홉과 기본 종단(end-to-end) 암호화 간의 기본 링크 계층 암호화입니다. 일반적인 응용 프로그램은 링크 계층 암호화, 종단 간 암호화 및 적절한 응용 프로그램 계층 암호화를 사용합니다.
 
-Encryption between nodes should be fast. FPGA implementations must support 10 Gb/s operation at line speed. ARM processors must be able to support 250 Mb/s.
+노드 간 암호화는 빠르게 수행됩니다. FPGA 실행은 10Gb/s 회선 속도를 지원해야 합니다. ARM 프로세서는 250Mb/s를 지원할 수 있어야 합니다.
 
-The current best candidate is ChaCha20 with ECC secp256k1 ephemeral key exchange.
+현재 가장 적합한 후보는 ECC secp256k1 임시 키 교환방식을 사용하는 ChaCha20입니다.
 
-ChaCha20 only uses simple arithmetic operations, is faster than AES for embedded devices and is more resistant to timing channel attacks than AES.
+ChaCha20은 단순한 산술 연산만을 사용하며, 임베디드 장치의 경우 AES보다 빠르고, AES보다 시차공격(timing channel attacks) 방어가 더 강력합니다.
 
-A modern CPU can perform 6000 secp256k1 ECDH operations per second. Session key rotation should be once per second or twice the round trip latency between nodes. There should be a separate key for each direction of communication.
+최신 CPU는 초당 6000 secp256k1 ECDH 작업을 수행 할 수 있습니다. 세션 키 순환은 초당 한 번 또는 노드 간의 라운드 트립 대기 시간의 두 배가 되어야 합니다. 각 방향의 통신을 위해 별도의 키가 있어야 합니다.
 
-The previous session key should be accumulated into the secret received via ECDH.
+이전 세션 키는 ECDH를 통해 전달받은 비밀데이터에 축적되어야 합니다.
 
-The session key, established through public key cryptography (ECC) is used to encrypt communications using a faster asymmetric encryption algorithm (AES, ChaCha20). This the basic link layer encryption between nodes
+공개키 암호화(ECC)를 통해 설정된 세션키는, 보다 빠른 비대칭 암호화 알고리즘(AES, ChaCha20)을 사용하여 통신을 암호화 하기 위해 사용됩니다. 
+이것은 노드 간의 통신을 위한 기본 계층 암호화 기법입니다.
 
-### Example Protocol: Nodes `A` and `B`
+### 프로토콜 예제 : 노드 'A' 와 'B'
 
-- Node `A` wants to generate session key for sending encrypted data to node `B`
-- Node `B` has public key `P`, with private key `p`. `P` is a point on the ECC sep256k1 curve. `p` is a 256 bit integer. `P` is the basepoint b, raised to the power of p with the curve addition operation.
-- Node `A` generates an ephemeral public key `Q`, with private key `q`. (Node `A` randomly generates a 20 byte integer. This is the private key `q`. Node `A` raises the base point to the power of `q`, to generate the private key `Q`, which is a point on the curve).
-- Node `A` sends, `P`*`q` (the point on curve `P`, which is `B`’s public key, raised to power of `q`)
-- Node `A` sends `P` to node `B`
-- Node `B` receives `P` and computes `P*q`, Node `A` can compute `p*Q`, which are equal. This is the shared secret, which is hashed to generate session key.
-- `P = b*q`, so `P*q` is equal to `(b*p)*q`.  `P*q = (b*p)*q = (b*q)*p = Q*p`, since `Q=b*q`. `A` knows `q,Q` and `P`, and `B` knows `p,P` and `Q`. So `A` and `B` can both compute `P*q` and `Q*p` and use this as their secret. However, a third party does not know the private keys `q` for `A` nor know the private key `p` for `B`, so a third party cannot compute this “secret” and therefore cannot read anything encrypted under the secret.
-- Node `B` confirms receipt of the session key update. Node `A` begins transmitting under the new session key as soon as the confirmation is received from `B`.
-- Node `A`, sends messages to node `B` by encrypting them using ChaCha20 using the session key, as the asymmetric encryption key.
+- 노드 `A`가 암호화 된 데이터를 노드 `B`에 보내기 위한 세션키를 생성하려고합니다.
+- 노드 `B`는 개인키 `P`와 함께 공개키 `P`를 가지고 있습니다. `P`는 ECC sep256k1 경로의 한 지점입니다. `P`는 256 비트 정수입니다.
+`P`는 기준점 b이며, 경로 추가 작업 시 생성됩니다.
+- 노드 `A`는 개인키 `q`와 임시 공개키 `Q`를 생성합니다. (Node `A`는 무작위로 20바이트 정수를 생성합니다. 이 키는 개인키 `q`입니다. 노드 `A`는 기준점을 `q`지점으로 높이고, 개인키 `Q`를 생성하는데, 이것은 경로의 한 지점입니다.)
+- 노드 `A`를 `P`*`q`로 전송합니다.(구간 `P`의 포인트, `B`의 공개키, `q`의 파워를 높여줍니다.)
+- 노드 `A`는 노드 `B`로 `P`를 전송합니다.
+- 노드 `B`는 `P`를 수신받아 `P*q`를 계산하고, 노드 `A`는 `p*Q`를 계산할 수 있습니다. 그리고 그 계산값은 동일합니다. 이것은 해시 처리된 세션키를 생성하기 위해 공유된 비밀입니다.
+- `P = b*q`, 따라서 `P*q'와 '(b*p)*q`는 같습니다. `A`는 `q,Q`와 `P`를 알고 있으며, `B`는 `p,P`와 `Q`를 알고 있습니다. 따라서 `A`와 `B`는 
+그들의 비밀방식을 사용하여 `P*q`와 `Q*p`를 계산할 수 있습니다. 그러나 제3자는 `A`의 개인키 `q`나 `B`의 개인키 `p`를 알 수 없는데, 
+제3자는 "비밀방식"을 계산할 수 없으며 또한 비밀방식으로 암호화 된 그 어떤 정보도 읽을 수 없기 때문입니다.
+- 노드 `B`는 세션 키 업데이트의 수신을 확인합니다. 노드 `A`는 `B`로부터 확인 받은 즉시, 새로운 세션 키로부터 전송을 시작합니다.
+- 노드 `A`는 노드 `B`로 세션 키를 사용한 ChaCha20라는 비대칭 암호화 키로 암호화하여 메시지를 전송합니다.
 
-### Possible Improvements:
+### 가능한 개선 사항 :
 
-- Frequent session key updates. ECDH key exchange every few seconds or minutes
-- Hash old session key with new ECDH secret to generate new session key
-- Add nonces to packets and hash secret into nonce to generate key for each message. Same key is never reused. Reduces impact of known plaintext attack.
-- Eliminate known plain text in messages.
-- Pad messages to multiples of 16 or 32 bytes
+- 잦은 세션 키 업데이트. 몇 초 또는 몇 분마다 ECDH 키 교환.
+- 새로운 세션 키를 생성하기 위해 새로운 ECDH 암호화를 이전 세션키로 해시해야 합니다.
+- nonce를 패킷에 추가하고 secret을 nonce에 해시하여 각 메시지의 키를 생성합니다. 같은 키는 결코 재 사용되지 않습니다. 알려진 평문 공격의 영향을 
+줄입니다.
+- 메시지에서 알려진 평문을 제거합니다.
+- 패드 메시지를 16 또는 32 바이트의 배수로 설정합니다.
 
-## IPv4 Gateway: Bypassing Existing ISPs
+## IPv4 게이트웨이 : 기존 ISP 우회
 
-Many people have only a single choice for ISPs. This briefly describes how Skywire can increase competition
+많은 사람들이 단 하나의 ISP를 사용하고 있습니다. 이것은 스카이와이어가 어떻게 시장 경쟁력을 높일 수 있는지 간단하게 설명할 수 있습니다.
 
-Some applications can run natively on the Skywire address space. Some applications such as Bittorrent, file syncing and communication applications strongly benefit from the Skywire infrastructure and will be modified to run natively on it.
+일부 응용 프로그램은 스카이와이어 주소 공간에서 원활하게 실행할 수 있습니다. 비트토렌트(Bittorrent), 파일 동기화 및 통신 애플리케이션과 같은 일부 애플리케이션은 스카이와이어 인프라 구조를 강력하게 활용하며 원활하게 실행될 수 있도록 개선될 것입니다.
 
-Legacy applications, such as Netflix, Facebook, Twittter require a network gateway interfacing the Skywire overlay network with IPv4 and IPv6 networks.
+Netflix, Facebook, Twitter와 같은 기존 응용 프로그램은 스카이와이어 오버레이 네트워크를 IPv4 및 IPv6 네트워크와 연결하는 네트워크 게이트웨이가 
+필요합니다.
 
-A user chooses a Skywire gateway running on a server in a local colocation center. The users IPv4 traffic will be tunneled through the gateway (similar to a VPN). The users IP will appear as the IP of the gateway server . The server has a gigabit connection to multiple fast internet backbones, on providers which do not rate limit Netflix. The user has multiple choices of providers for Skywire IPv4 gateways. The gateway provider will be paid in Skycoin on a metered basis.
+사용자는 지역 센터의 서버에서 실행 중인 스카이와이어 게이트웨이를 선택합니다. 사용자의 IPv4 트래픽은 게이트웨이를 통해 이동합니다.(VPN과 유사) 
+사용자 IP는 게이트웨이 서버의 IP로 나타납니다. 서버는 Netflix 전송속도 제한율이 없는 제공 업체를 통해 다중 고속 인터넷 백본을 위한 기가비트 
+연결을 설정합니다. 사용자는 스카이와이어 IPv4 게이트웨이를 제공하는 업체들 중에서 다양한 선택을 할 수 있습니다. 게이트웨이 제공업체에게 사용량 
+기준으로 스카이코인이 지급될 것입니다.
 
-The Skywire node in the users home connects to the gateway over all possible routes. The Skywire node tunnels the IPv4 traffic from a router to the gateway in the colocation center. The IP address of the gateway node is the IP address that appears to the user.
+사용자 개인의 스카이와이어 노드는 가능한 모든 경로를 통해 게이트웨이에 연결됩니다. 스카이와이어 노드는 라우터에서 지역 센터의 게이트웨이로 IPv4 
+트래픽을 전송합니다. 게이트웨이 노드의 IP 주소는 사용자에게 표시되는 IP 주소입니다.
 
-### Example One
+### 예제 1
 
-A user has a 10 Mb/s cable modem. They install a Skywire router. The router is plugged into their computer, into a Skywire Wifi node and into their cable model. The router is configured with Skywire as a IPv4 tunnel. They plug their computer into the router .
+사용자는 10 Mb/s 케이블 모뎀을 사용합니다. 그들은 Skywire 라우터를 설치합니다. 라우터는 컴퓨터, 스카이와이어 Wifi 노드 및 케이블 모델에 
+연결됩니다. 라우터는 스카이와이어의 IPv4 터널로 구성됩니다. 그들은 개인용 컴퓨터를 라우터에 연결합니다.
 
-The Skywire wifi node connects to their neighbors Skywire node over wifi, which is connected to a 10 Mb/s cable modem. The neighbor also has a 200 Mb/s 5 GHz wifi with directional point-to-point antenna connected to a business running a Skywire wifi node down the street.
+스카이와이어 wifi 노드는 10Mb/s 케이블 모뎀에 연결된 wifi를 통해 이웃 스카이와이어 노드에 연결됩니다. 이웃 역시 200Mb/s 5GHz Wi-Fi와 점-대-점 
+안테나가 있으며, 이것은 근처에 위치한 스카이와이어 무선랜 노드 사업장과 연결되어 있습니다.
 
-The users Skywire router does a recursive breadth first search for nodes with clearnet connectivity and establish routes over
+사용자의 Skywire 라우터는 clearnet 연결을 통해 노드를 먼저 검색하고 경로를 설정하는 작업을 반복합니다.
 
-* His cable modem
-* Wifi -> his neighbors cable modem
-* Wifi -> 5 GHz point to point -> 100/30 Mb/s business/fiber drop
+* 사용자의 케이블 모뎀
+* Wifi -> 이웃의 케이블 모뎀
+* Wifi -> 5 GHz 점 대 점 -> 100/30 Mb/s 비지니스/필드 소멸
 
-The user will be able to access and aggregate bandwidth over all routes, in connecting to the IPv4 tunnel. In communities where aggregate bandwidth and reliability have reached a certain level, the user no longer needs the cable modem for connectivity.
+사용자는 IPv4 터널에 연결하여 모든 경로에서 대역폭에 접속 및 집계 할 수 있습니다. 총 대역폭과 신뢰성이 일정 수준에 도달한 커뮤니티에서, 
+사용자는 더 이상 연결을 위한 케이블 모뎀을 필요로 하지 않습니다.
 
-### Example Two
+### 예제 2
 
-The business down the street has a 100/30 Mb/s fiber drop with an SLA. The business pays a fixed rate for internet. Any bandwidth they do not use is lost. The business hooks up a Skywire router. The router has 3 ports. The first port is their WAN connection, the second port is their internal network, the third port goes to their Skywire wifi nodes on roof. The router buffers and prioritizes traffic on the internal network and allocates unused capacity to the Skywire traffic. The operator receives Skycoins for transit which, subsidizes the cost of the fiber drop.
+근처에 100/30 Mb/s fiber drop과 SLA를 가진 사업장이 있다. 사업장은 인터넷 사용을 위해 정해진 요금을 지불합니다. 사용하지 않는 대역폭은 모두 손실됩니다. 사업장은 스카이와이어 라우터를 연결합니다. 라우터에는 3 개의 포트가 있습니다. 첫 번째 포트는 WAN 연결이고, 두 번째 포트는 내부 네트워크
+이며, 세 번째 포트는 옥상에 있는 스카이와이어 Wi-Fi 노드로 연결됩니다. 라우터는 내부 네트워크의 트래픽을 버퍼링하고 우선 순위를 지정하며 
+사용되지 않는 용량을 스카이와이어 트래픽에 할당합니다. 운영자는 전송을 위해 쓰이는 fiber drop 비용에 대한 보조금으로써 스카이코인을 받는다.
 
-## Skywire Daemon Services Architecture
+## 스카이와이어 데몬 서비스 구조
 
-* Each Skycoin node has a Secpk256k1 pubkey
-* Each Skycoin node has a Skycoin address identifying it. The address is a hash of the node’s public key. This public key hash is the equivalent of an IP address on the network.
-* Each Skycoin node has a connection pool of peer it is connected to. These can be peers over TCP, UDP clearnet connections, physical connections through direct Ethernet and Wifi peer (meshnet operation). A connection can also be a “virtual connection” which is tunneled through a physical or clearnet connection and will be described later.
-* Each connection instance with a peer has “channels”. A channel is a 16 bit integer which is similar to a “port” in TCP.
-* All messages sent and received have a 32 bit length prefixed and 16 bit channel.
-* Channel 0 is reserved for communication between Skywire Daemons,  exposing meta-information about the services running on the Daemon and other data required for network operation.
-* A Skywire daemon may expose “services” on a channel. A service is a process that handles data messages received on a channel and originates data messages addressed to remote peers and services.
+* 각 스카이코인 노드에는 Secpk256k1 공개키가 있습니다.
+* 각 Skycoin 노드에는 식별을 위한 스카이코인 주소가 있습니다. 주소는 노드의 공용키 해시입니다. 이 공개 키 해시는 네트워크의 IP 주소와 동일합니다.
+* 각 스카이코인 노드들은 피어가 연결된 연결 풀이 있습니다. 이것들은 TCP, UDP clearnet 연결, 직접적인 이더넷 및 Wifi 피어(메쉬넷 작업)를 통한 
+물리적 연결을 통해 피어가 될 수 있습니다. 연결은 물리적 연결 또는 clearnet 연결을 통해 전송되는 "가상 연결"일 수도 있으며 나중에 다시 설명됩니다.
+* 피어와 연결된 각 연결 인스턴스에는 "채널"이 있습니다. 채널은 TCP의 "포트"와 유사한 16 비트 정수입니다.
+* 주고 받은 모든 메시지에는 32 비트 길이의 접두사와 16 비트 채널이 있습니다.
+* 채널 0은 스카이와이어 데몬 간의 통신을 위해 예약되어, 데몬에서 실행되는 서비스에 대한 메타 정보와 네트워크 작동에 필요한 기타 데이터를 
+노출합니다.
+* 스카이와이어 데몬은 채널에 "서비스"를 노출시킬 수 있습니다. 서비스는 채널에서 수신된 데이터 메시지를 처리하고 원격 피어 및 서비스로 보내지는 
+데이터 메시지를 전송하는 프로세스입니다.
 
-### Example Service: Blockchain Sync
+### 서비스 예 : 블록 체인 동기화
 
-*This example is refers to a Golang implementation, but the daemon architecture is language agnostic.*
+*이 예제는 Golang 구현을 나타내지만, 데몬 구조는 특정 언어에 제한적이지 않습니다.*
 
-You want to sync two different personal block chains of people with public keys A and B. You initiate two “blockchain sync service” instances, configure them with the respective public keys and associate them with the Skycoin Daemon. These services run on your local daemon, each on a particular channel.
+당신은 두 개의 서로 다른 개인 블록체인을 공개키 A 및 B와 동기화 하려고 합니다. 당신은 우선 두 개의 "블록체인 동기화 서비스" 인스턴스를 시작하고, 
+각각의 공개 키를 구성하여 스카이코인 데몬과 연동시킵니다 이 서비스는 당신의 로컬 데몬(각각의 개별적인 채널)에서 실행됩니다.
 
-#### Finding Peers
+#### Peer 찾기
 
-The blockchain sync daemons the hash the public key and do a DHT (Distributed Hash Table) lookup to find other peers syncing the blockchain. Once peers are found, the peers can be introduce each other to additional peers through PEX (Peer Exchange).
+블록 체인 동기화 데몬은 공개키를 해시처리 DHT(분산된 해시 테이블) 조회를 수행하여 블록체인을 동기화하는 다른 피어를 찾습니다. 일단 피어가 발견되면 피어는 PEX(피어 교환)를 통해 다른 피어에게 접근할 수 있습니다.
 
-#### Sending and Receiving Messages
+#### 메시지 송/수신
 
-Services on creation register a list of messages they respond to and can send. Messages are Golang structs. The message struct data is filled out and then sent. The data arrives and the .Handle() method is called on the corresponding message struct.
+레지스터 등록 서비스는 송/수신 가능한 메시지 목록을 생성할 수 있습니다. 메시지는 Golang 구조입니다. 메시지 구조체 데이터는 생성되고 전송됩니다. 
+데이터가 도착하고 .Handle () 메서드가 해당 메시지 구조체에 호출됩니다.
 
-## Multi-Home Routing and Link Aggregation
+## 다중 홈 라우팅 및 링크 집계
 
-If you have a 2 Mb/s cable modem and your neighbor has a 2 Mb/s cable modem and each of you are running Skywire nodes, then your Skywire node can connect to his node and aggregate the bandwidth across both connections. Packets may now take routes through your cable modem and routes through his cable modem. The cable modems are the choke point. To get a 4 Mb/s connection, traffic has to pass in parallel paths through both modems.
+만약 당신이 2Mb/s 케이블 모뎀을 가지고 있고 이웃이 2Mb/s 케이블 모뎀을 가지고 있으며 각각 스카이와이어 노드를 실행하고 있다면,
+당신의 스카이와이어 노드를 이웃의 노드에 연결할 수 있으며, 쌍방 연결에 대한 대역폭을 집계할 수 있습니다. 이제 패킷은 케이블 모뎀을 통해 경로를 
+설정하고 케이블 모뎀을 통해 라우팅 할 수 있습니다. 케이블 모뎀은 초크 포인트입니다. 4 Mb/s 연결을 얻으려면, 트래픽이 두 모뎀을 통해 병렬 경로로 
+전달되어야 합니다.
 
-Applications like Bittorrent will be able to aggregate bandwidth across all available connections, because they natively open up a large number of connections, which will take district routes.
+비트 토렌트(Bittorrent)와 같은 응용 프로그램은 사용 가능한 모든 연결에서 대역폭을 집계 할 수 있는데,
+기본적으로 지역 루트를 통해 많은 수의 연결(커넥션)을 생성하기 때문입니다.
 
-## Meshnet Routing: Store and Forward
+## 메쉬 라우팅 : 저장 및 전송
 
-For nodes at the edge of the network communicating over mesh, there are a few issues.
+메쉬를 통해 통신하는 네트워크의 가장자리에 있는 노드의 경우 몇 가지 문제가 있습니다.
 
-If you have an eight hop network over Wifi and 50% of packets drop on each hop, then only 1 in 256 packets will make it through. Packet drop is normal on Wifi, but traditional TCP treats packet drop as congestion and throttles the connection speed back.
+8홉 네트워크는 Wifi를 거쳐가며 각 홉에서 패킷의 50 %가 탈락되고, 256 패킷 중 1패킷만 통과하게됩니다. 패킷 탈락은 Wifi에서는 정상이지만, 
+일반적인 TCP는 패킷 탈락을 혼잡으로 처리하고 연결 속도를 다시 조절합니다.
 
 At the network edge, Skywire will use store and forward along routes. This imposes a memory requirement on Skywire nodes, but significantly improves network performance.
 
@@ -474,6 +499,6 @@ Situations where this will become increasingly relevant
 
 Utilizing asymmetric connectivity and routes allowing only one way direct data transmission between nodes has several advances, especially for rural developments and reducing cost of integrating high capacity of next-gen technologies.
 
-## Source Routing: Route Discovery
+## 소스 라우팅 : 경로 검색
 
 IPv4 gateway and meshnets for community ISPs, only require breadth first search over paths to clearnet connectivity. The best, most reliable, highest throughput routes have very small depth. Therefore we consider routing solved for this case. Will look at general routing later.
