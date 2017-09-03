@@ -430,111 +430,138 @@ MTU를 지원하는 네트워크에서 더 큰 데이터그램을 허용하여 �
 휴대 전화에서 실행중인 스카이와이어 노드가 운전 중인 자동차에 있다면 접근 할 수 있는 네트워크가 변경됩니다. 네트워크 노드가 범위에 들어가고 
 다른 네트워크 노드가 범위를 벗어날 것입니다. 노드는 물리적 연결이 생성되고 소멸되는 경우에도 응용 프로그램 계층에서 지속적으로 연결되어야합니다.
 
-One approach is choosing a set of reliable nodes on the network backbone as termination points for a route and then proxying the traffic through these nodes, over a set of multiple short term routes.
-Source Routing: Multi-Route Reliability
+하나의 접근법은 경로의 종단점으로 네트워크 백본에서 신뢰할 수있는 노드 집합을 선택하고 여러 개의 단기 경로 집합을 통해 이러한 노드를 통해 트래픽을 프록싱하는 것입니다. 소스 라우팅 : 다중 경로 신뢰성
 
-If links are unreliable or have highly variable latency, it is desirable to encode application data over multiple paths, such that the data can be recovered if data from any of the paths is received. Fountain coding and other encoding methods exist which may be applicable here.
+링크가 신뢰할 수 없거나 대기 시간이 매우 가변적인 경우, 여러 경로에서 응용 프로그램 데이터를 인코딩하여 경로의 데이터를 수신하면 데이터를 
+복구할 수 있습니다. 여기에 적용 할 수있는 분수 코딩 및 기타 인코딩 방법이 있습니다.
 
-## Source Routing: Guard Nodes
+## 소스 라우팅 : 보호 노드
 
-For privacy, if a user wants to further weaken linkability between their Skywire node address (public key hash) to their IP address, they can destinate a fixed set of nodes that are advertised as being transit points for traffic destined for their address or act as required nodes on a route from their address.
+개인정보보호를 위해 사용자가 자신의 스카이와이어 노드 주소(공개키 해시)와 IP 주소 간의 연결율을 저하시키려는 경우, 
+주소로 향하는 트래픽에 대한 전송 지점으로 알려져 있는 고정된 노드 집합을 대상으로 지정하거나, 
+자신의 주소에서 경로 상의 노드를 수정하는 것을 필요로 합니다.
 
-## Source Routing: Limitations of BGP
+## 소스 라우팅 : BGP의 제한
 
-Border Gateway Protocol, the current dominant routing protocol, handles the routing problem by not keeping any state for packets. Instead BGP, allows each network to create a series of ad-hoc rules for each of its routers which look at the source and destination of a packet and decide which network interface to forward the packet to. Routers message each other with connectivity information and another routing algorithm is used for routing within a network domain.
+현재 독점적으로 사용되고 있는 라우팅 프로토콜인 Border 게이트웨이 프로토콜은 패킷의 상태를 유지하지 않음으로써 라우팅 문제를 처리합니다.
+대신 BGP를 사용하면 각 네트워크가 패킷의 소스와 대상을 확인하여, 패킷을 전달할 네트워크 인터페이스를 결정하는 각 라우터의 일련의 
+임시 규칙을 만들 수 있습니다. 라우터는 서로 간의 연결 정보를 통해 메시지를 보내고, 다른 라우팅 알고리즘은 네트워크 도메인 내에서 
+라우팅 하기 위해 사용됩니다.
 
-BGP is designed to interface a series of independent autonomous networks. BGP has a homogeneity assumption, the routing within an autonomous domain is assumed to be centrally managed and highly reliable with homogenous routing within the domain. Mesh network and community ISPs will be ad-hoc with heterogeneous device connectivity and routing.
+BGP는 일련의 독립적인 자율 네트워크를 인터페이스하도록 설계되었습니다. BGP에는 동일한 가정이 있는데, 자율 도메인 내의 라우팅은 도메인 내에서 
+동질 라우팅을 통해 중앙에서 관리되고 높은 신뢰성을 제공한다고 가정합니다. 메쉬 네트워크 및 커뮤니티 ISP는 다른 기종 장치 및 라우팅과 
+임시로 연결됩니다.
 
-Connectivity in mesh networks, ad-hoc configurations and densely interconnected networks with redundant multi-home routing paths completely violate the hierarchical assumptions BGP.
+메쉬(mesh) 네트워크, Ad-hoc 구성 및 고밀도로 상호 연결된 네트워크에서 중복 멀티 홈 라우팅 경로를 통한 연결은 계층적 가정 하의 BGP를 
+완벽히 배제합니다.
 
-BGP has several issues that a next gen protocol should address:
+BGP에는 차세대 프로토콜이 다루어야 할 몇 가지 문제가 있습니다.:
 
-* BGP is not self configuring. BGP based networks require extensive technical expertise to configure and operate
-* BGP systems often require manual configuration to route around damage and are not resilient against bad configurations
-* BGP requires manual creation of ad-hoc route filtering rules and increasing complexity for networks with multi-home connectivity
-* BGP networks require highly centralized planning
-* The NSA has exploited flawed in BGP to route targeted traffic to interception points
-* The assumptions of BGP are becoming increasingly strained, especially for ad-hoc, mesh and mobile networks
-* The hierarchical, single path assumptions of BGP make implementation of multi-homing and other next-gen networking requirements extremely difficult
-* BGP suffers severe issues when network links are unreliable, such as route flapping.
-* BGP routing table size grows exponentially as interconnected subnetworks proliferate.
-* Multihoming causes a massive explosion in BGP routing table size.
-* BGP has difficulty with load balancing and multi-home routing. BGP limits the ability in practical networks to take advantage of parallel connectivity between locations.
-* BGP creates an incentive for ISPs to dump network traffic on to other networks as quickly as possible (“Hot Potato Routing”), reducing performance and increasing latency
+* BGP는 자체 구성이 아닙니다. BGP 기반 네트워크를 구성 및 운영하기 위해서는 광범위한 기술과 전문 지식을 필요로 합니다.
+* BGP 시스템은 종종 손상된 경로를 라우팅하기 위해 수동 구성이 필요하며 잘못된 구성에 대해 복원력이 없습니다.
+* BGP는 ad-hoc 경로 필터링 규칙을 수동으로 생성해야하며, 다중 홈 연결을 사용하기 위해서는 네트워크의 복잡성이 증가합니다.
+* BGP 네트워크에는 고도로 집중된 계획이 필요합니다.
+* NSA는 목표 트래픽을 차단점으로 라우팅하기 위해 BGP의 결함을 악용했습니다.
+* BGP의 가정은 특히 ad-hoc, mesh 및 mobile 네트워크의 경우 점점 더 어려워지고 있습니다.
+* BGP의 계층적, 단일 경로 가정은 멀티 호밍 및 기타 차세대 네트워킹 요구사항 구현을 매우 어렵게 만듭니다.
+* 라우트 플래핑과 같이 네트워크 링크가 신뢰할 수 없는 경우 BGP는 심각한 문제를 겪습니다.
+* 상호 연결된 서브 네트워크가 급증함에 따라 BGP 라우팅 테이블 크기가 급격히 증가합니다.
+* 멀티 호밍은 BGP 라우팅 테이블 크기에서 엄청난 손실을 일으킵니다.
+* BGP는로드 밸런싱 및 멀티홈 라우팅에 어려움이 있습니다. BGP는 실제 네트워크에서 위치 간 병렬 연결을 이용할 수 있는 기능을 제한합니다.
+* BGP는 신속하게 네트워크 트래픽을 다른 네트워크로 덤프하는 ISP( "Hot Potato Routing")에 인센티브를 제공하여 성능을 저하시키고
+대기 시간을 증가시킵니다.
 
-There is no alternative to BGP. BGP is the best solution within its design constraints.
+BGP에 대한 대안은 없습니다. BGP는 설계 제약 내에서 최상의 솔루션입니다.
 
-The successor to BGP must:
+BGP의 후속 조치는 다음과 같습니다.:
 
-* Be non-hierarchical
-* Be self-configuring (zero-conf)
-* Operate well with dense ad-hoc, redundant interconnection between networks
+* 비계층 적이어야 함
+* 자체 구성(제로-구성)
+* 네트워크 간 밀집된 ad-hoc, 임시 연결이 정상적으로 작동
 
-## Virtual Routes: Skywire Network Topology at Scale
+## 가상 경로 : 스카이와이어 네트워크 토폴로지 규모
 
-The Skywire routing implementation requires a node to maintain information for each route that passes through it. Individual nodes are unable to handle hundreds of thousands of individual routes and scalability is achieved through another mechanism.
+스카이와이어 라우팅 구현은 노드를 통과하는 각 경로에 대한 정보를 유지 관리하는 것을 필요로 합니다. 개별 노드는 수십만 개의 개별 경로를 처리 할 수 
+없으며 다른 메커니즘을 통해 확장성을 달성합니다.
 
-Skywire is experimenting with a non-hierarchical, self organizing routing that natively supports multihoming and non-hierarchical network topographies while scaling efficiently.
+스카이와이어는 효율적으로 확장하는 동시에 멀티호밍 및 비계층적 네트워크 토폴로지를 기본적으로 지원하는 비계층적, 자체 구성 라우팅을 테스트하고 
+있습니다.
 
-Skywire minimizes network diameter as the network scales through the use of virtual routes. Virtual routes allow thousands of connections to be bundled over a high bandwidth backbone connection with the overhead of a single route.
+스카이와이어는 가상 경로를 사용하여 네트워크가 확장됨에 따라 네트워크 규모를 최소화합니다. 가상 경로를 사용하면 단일 경로의 오버 헤드로 
+고대역폭 백본 연결을 통해 수천 개의 연결을 번들로 묶을 수 있습니다.
 
-A “virtual route” creates a tunnel over an existing route:
+"가상 경로"는 기존 경로 위에 터널을 만듭니다.:
 
 `A -> B -> C -> D`
 
-The virtual route appears as A->D. B and C may be high bandwidth long distance connections. B and C only incur the overhead of a single route, while A and D incur the overhead of maintaining the routes on the A->D tunnel.
+가상 경로는 A -> D로 나타납니다. B와 C는 고 대역폭 장거리 연결일 수 있습니다. B와 C는 단 하나의 경로의 오버 헤드를 발생시키는 반면, 
+A와 D는 A-> D 터널에서 경로를 유지/관리하는 오버 헤드를 초래합니다.
 
-The virtual route may contain traffic from hundreds of bundled routes from A to D, while B and C only experience overhead of a single route. The virtual route may further, bundle multiple redundant network paths between the origin and destination for performance, throughput and redundancy.
+가상 경로에는 A에서 D까지의 수백 개의 묶음 경로가 포함될 수 있지만, B와 C는 단일 경로의 오버 헤드만 발생될 수 있습니다. 가상 경로는 성능, 
+처리량 및 중복성을 위해 원본 및 대상 간에 여러 중복 네트워크 경로를 추가로 묶을 수 있습니다.
 
-Virtual routes allow network capacity to be clustered roughly hierarchically with nodes at each layer having a constant fan in and overhead.
+가상 경로를 사용하면 네트워크 용량을 대략 계층적으로 클러스터링 할 수 있습니다. 각 계층의 노드는 일정한 팬 및 오버 헤드가 있습니다.
 
-Nodes at the network edge feed into aggregation nodes. Edge aggregation nodes are connected to high bandwidth intradomain transit and feed into gateway nodes which interface between networks. Gateway nodes feed into high bandwidth and long-haul transit.
+네트워크 종단 간의 노드가 집계 노드에 공급됩니다. 종단 집합 노드는 고 대역폭 내부 도메인 전송계층에 연결되고 네트워크간에 인터페이스하는 
+게이트웨이 노드로 공급됩니다. 게이트웨이 노드는 높은 대역폭과 장거리 전송에 공급됩니다.
 
-Virtual routes are a representation of existing interdomain routing relationships, which natively support:
+가상 경로는 기존 도메인 간 라우팅 관계를 나타내는 것으로, 기본적으로 다음을 지원합니다.:
 
-* Non-hierarchical routing (data centers)
-* Multiple-homing
-* Dense network interconnection between domains at different levels of hierarchy
-* Multi-path routing within and between network domains
+* 비계층적 라우팅(데이터 센터)
+* 다중 호밍
+* 서로 다른 계층 구조의 도메인 간 밀집된 네트워크 상호 연결
+* 각 네트워크 도메인 내의 다중 경로 라우팅
 
-Virtual routes obey a triangle equality. If the cost of a route A->B, is C(A->B) then
+가상 경로는 동등한 삼중 구조를 따릅니다. 만약 경로 A -> B의 비용이 C (A -> B)이면
 
 `C(A->B->C) >= C(A->B) + C(B->C)`
 
-Origin preference for low latency, low cost, and low hop routes, creates economic incentives to create an efficient network topology. The network is non-hierarchical and self-organizing. The virtual routes that are created are route summarizations that naturally reflect the flow of traffic.
+낮은 대기 시간, 낮은 비용 및 낮은 홉 경로에 대한 출발점 환경 설정은 경제적인 인센티브를 창출하여 효율적인 네트워크 토폴로지를 만듭니다.
+네트워크는 비계층적이며 스스로 구성됩니다. 생성된 가상 경로는 자연스럽게 흘러가는 트래픽 흐름을 반영하는 경로 요약본을 생성합니다.
 
-In BGP, networks try to get rid of traffic as quickly as possible (hot potato routing). In Skywire, networks compete to provide transit (to receive coin incentives). Skywire clients will preference, low cost, low hop count and low latency routes. Networks with direct long haul capacity between source and destination have lower latency and lower hop count and therefore receive preference.
+BGP에서 네트워크는 가능한 한 빨리 트래픽을 소멸하려고합니다.(hot potato 라우팅). 스카이와이어에서, 네트워크는 전송을 제공하기 위해 경쟁합니다.
+(코인 인센티브를 받기 위해서) 스카이와이어 고객은 낮은 가격, 낮은 홉 수, 짧은 대기시간을 선호할 것입니다. 
+출발지와 목적지 간 직접 연결된 장거리 용량을 가진 네트워크는 대기 시간이 짧고 홉 수 (hop count)가 낮으므로 우선 순위를 받습니다.
 
-For efficiency, the bandwidth capacity and fan-in (number of routes each virtual route is bundling) at each level of the network hierarchy must be constant, in order to achieve a constant network diameter and logarithmic routing table growth in the number of hosts.
+효율성을 위해, 네트워크 계층의 각 레벨에서 대역폭 용량 및 fan-in(각 가상 경로가 번들링되는 경로 수)은 일정해야하며, 
+이는 네트워크 수의 일정한 네트워크 크기 및 로그 라우팅 테이블의 증가를 달성하기 위해서이기도 합니다.
 
-## Source Routing: Virtual Routes, SONET Topology
+## 소스 라우팅 : 가상 경로, SONET 토폴로지
 
-A multiple-input, multiple-output virtual route, may be physically implemented as a SONET ring, with Skywire nodes in each city the SONET topology passes through. The Skywire nodes act as a gateway router between the Skywire network and the SONET topology.
+다중 입력, 다중 출력 가상 경로는 물리적으로 SONET 링으로 구현될 수 있으며, SONET 토폴로지가 통과하는 각 도시에 스카이와이어 노드가 있습니다.
+스카이와이어 노드는 스카이와이어 네트워크와 SONET 토폴로지 간의 게이트웨이 라우터 역할을 합니다.
 
-Nodes are able to queue up large datagrams concatenating multiple messages from the same source to the same destination for efficiency.
+노드는 효율성을 위해 동일한 소스의 여러 메시지를 동일한 대상에 연결하는 대형 데이터그램을 대기열에 넣을 수 있습니다.
 
-The message enters the Skywire node of the SONET ring at a colocation center in one city. The message destination or route is read and the message is encoded for transport over the SONET segment. The message arrives at the destination Skywire node on the SONET segment and continues on its path.
+메시지는 한 도시의 로컬 센터에서 SONET 링의 스카이와이어 노드로 들어갑니다. 메시지 도착지 또는 경로가 읽히고 메시지가 SONET 세그먼트를 
+통한 전송을 위해 인코딩됩니다. 메시지는 SONET 세그먼트의 대상 스카이와이어 노드에 도달하고 경로에서 계속됩니다.
 
-A multiple input, multiple output virtual route is therefore a list of Skywire nodes, with a transit cost, describing a SONET ring or fully connected topology, where any node in list has transit to any other node in the list.
+따라서 다중 입력, 다중 출력 가상 경로는 전송 비용이있는 스카이와이어 노드의 목록으로, SONET 링 또는 완전히 연결된 토폴로지를 설명합니다. 
+목록의 모든 노드는 목록의 다른 노드로 이동합니다.
 
-## Source Routing: Asymmetric Connectivity
+## 소스 라우팅 : 비대칭 연결
 
-Next gen wifi systems will have 4x4 and 8x8 antennas in a phased array MIMO arrangement. Such systems are able to project highly focused directional beams. These systems significantly increase the power and signal strength at the receiver, but do not symmetrically improve antenna gain for return signals.
+차세대 wifi 시스템은 위상 배열 MIMO의 4x4 및 8x8 안테나를 사용합니다. 이러한 시스템은 고도로 집중된 지향성 빔을 투사 할 수 있습니다. 이 시스템은 수신기에서 전력 및 신호 강도를 크게 증가 시키지만, 복귀 신호에 대해 대칭적으로 안테나 이득을 향상시키지는 않습니다.
 
-Similarly, a high powered, amplified wifi signal through a directional antenna may be received at a site fifteen miles away, but reception of the signal from the site cannot similarly be amplified as easily as power can be boosted in transmission.
+유사하게, 지향성 안테나를 통해 고출력, 증폭된 와이파이 신호가 15 마일 떨어진 지점에서 수신 될 수 있지만, 
+사이트에서의 신호 수신은 송신 시 전력이 증폭될 수 있을 만큼 쉽게 증폭 될 수 없습니다.
 
-We propose, Asymmetric routes, for situation where messages can be received by a node, but where the node cannot directly communicate back. In an asymmetric route confirmation messages are relayed over the network by a route, enabling full utilization of asymmetric connectivity over one way communication channels.
+우리는 노드가 메시지를 수신 할 수 있지만 노드가 직접 통신 할 수없는 상황에 대해서는 비대칭 경로를 제안합니다. 
+비대칭 경로에서 확인 메시지는 경로를 통해 네트워크를 통해 릴레이되므로 단방향 통신 채널을 통해 비대칭 연결을 최대한 활용할 수 있습니다.
 
-Situations where this will become increasingly relevant
+이것에 대해서는 점점 더 관련성이 높아지는 상황입니다.
 
-* Rural SONET arrangements with amplified Wifi over directional antennas
-* Urban connectivity between highly directional and non-directional antennas broadcasting at the same power levels
-* Concrete penetration in 802.11af systems
-* Non-line of sight LiFi propagation can transmit over 200 Mb/s but its highly asymmetrical
-* RONJA type Li-Fi systems have theoretical capacity limits over 10 Gb/s line-of-sight and there is cost/setup advantage for asymmetrical connectivity
+* 지향성 안테나를 통해 증폭된 Wi-Fi를 사용하는 지역에 SONET 배치
+* 동일한 전력 레벨로 방송되는 고도 지향성 안테나와 무지향성 안테나 간의 도시 간 연결성
+* 802.11af 시스템의 고정적인 공급
+* 비선형 LiFi 전파는 200 Mb/s 이상을 전송할 수 있지만 비대칭성이 높음
+* RONJA 유형 Li-Fi 시스템은 이론적인 용량 한계가 10Gb/s이며, 비대칭 연결에 비용/설정 이점이 있음
 
-Utilizing asymmetric connectivity and routes allowing only one way direct data transmission between nodes has several advances, especially for rural developments and reducing cost of integrating high capacity of next-gen technologies.
+비대칭 연결과 경로를 활용하여 노드 간 직접 데이터 전송을 단방향으로만 가능하도록 하는 것은 몇 가지 이점이 있는데,
+특히 농촌 개발 및 차세대 기술의 고용량 통합 비용 절감을 할 수 있다는 것입니다.
 
 ## 소스 라우팅 : 경로 검색
 
-IPv4 gateway and meshnets for community ISPs, only require breadth first search over paths to clearnet connectivity. The best, most reliable, highest throughput routes have very small depth. Therefore we consider routing solved for this case. Will look at general routing later.
+커뮤니티 ISP를 위한 IPv4 게이트웨이 및 메쉬넷(meshnets)은 단지 clearnet 연결경로에 대한 첫번째 검색만을 필요로 합니다. 
+최고로 신뢰성있는 경로는 매우 작은 폭을 가지고 있습니다. 따라서 우리는 이 경우에 대한 라우팅 해결방법에 대해 고려합니다.  
+그 다음 일반 라우팅에 대해 살펴볼 것입니다.
