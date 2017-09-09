@@ -34,60 +34,78 @@ synth 안녕하세요.
 안녕하세요.
 
 **boldninja**
-I think we can start - you guys know the drill. Give him some time to respond (no more than 2-3 questions on backlog so he can catch up)
+이제 시작할 수 있겠군요. - 모두 어떻게 할 지 알고 있겠죠. 그에게 답변할 수 있는 시간을 주세요.
+(그가 답변할 수 있도록 백로그에 2-3개의 질문만 남겨주세요.) 
 
 **dr10**
-How would you - shortly & in easy words - sum-up the advantages of SkyCoin to magazines and non-crypto people?
+당신의 어떻게 - 쉽고 간단한 단어로 - 스카이코인의 장점을 언론(매거진)과 암호화코인을 모르는 사람들에게 홍보할 것입니까?
 
 **mgaruccio**
-Can you explain a bit about the mesh net? Is it just an mpls network between nodes or is there something deeper going on?
+메쉬넷에 대해 간단히 설명해 줄 수 있나요? 이것은 노드 간의 mpls 네트워크입니까? 아니면 더 깊은 무언가가 있는 것입니까?
 
 **michaelthecryptoguy**
-Whassup @synth
+안녕하세요. @synth
 
 **tranzer**
-hi synth. I have a question - are those coins that are not in circulation in any cold wallets since only a portion is currently available according to CMC? What would you say is the 1 unique feature that Skycoin has?
+안녕하세요.synth. 나는 질문이 있습니다. CMC에 따르면 이 코인은 현재 일부분만 사용할 수 있기 때문에 몇몇 비활성 지갑들(cold wallets)에 있는 
+코인들은 거래할 수 없나요?
+스카이코인이 가지고 있는 가장 독특한 특징은 무엇이라고 생각하십니까?
 
 **synth**
-It is very difficult, because Skycoin is a very large project and already has +6 years of development. Different parts of the project have different objectives.
-The cryto, coin part is about solving the problems with the existing consensus algorithms. Being able to do +300 transactions a second, transactions in seconds instead of minutes (faster than credit cards), eliminating miners, eliminating block rewards (eliminating inflation) and eliminating 51% attack and the other problems with mining.
-then there are other repos and experimental projects under https://github.com/skycoin such as a meshnet and distributed VPN prototype, where people will be paid coins for forwarding traffic. Also prototypes of distributed social media application, with peer to peer data replication and different experimental projects. Research into immutable data structures for next generation internet. Some of them are very radical.
+매우 답변하기 어렵군요. 왜냐하면 스카이코인은 매우 큰 프로젝트이며 우리는 이미 6년 이상의 개발기간을 거쳤습니다.
+프로젝트의 각각 다른 파트들은 각자 다른 목표를 가지고 있습니다.
+암호화, 코인파트의 목표는 기존 합의 알고리즘의 문제점을 해결하는 것입니다.
+초 당 300건 이상의 트랜젝션을 수행할 수 있기 때문에, 분 당이 아닌 초당 트랜젝션(신용카드보다 빠름) 수행, 채굴자 제거, 블럭 보상 제거
+(인플레이션 제거) 그리고 51%공격 제거
+및 채굴로 인해 발생되는 다른 문제점들도 해결할 수 있습니다.
+다음으로 메쉬넷, 분산 VPN 프로토타입 같은 다른 repo들 및 실험프로젝트가 https://github.com/skycoin에 있습니다.
+사람들은 트래픽을 전달하기 위해 코인을 지불할 것입니다. 또한 분산 소셜 미디어 어플리케이션의 프로토타입을 
+P2P(peer to peer) 데이터 복제 및 다른 실험적인 프로젝트를 활용하여 제작하고 있습니다.
+차세대 인터넷을 위한 변조 불가능한 데이터 구조를 연구하고 있습니다. 그 중 일부는 매우 원론적입니다.
 
 **dr10**
-How does the Network consensus algorithm Obelisk work and differ from widely known algorithms like Proof of Work and Proof of Stake?
+네트워크 컨센서스 알고리즘 Obelisk는 어떻게 작동하며 Proof of Work 및 Stake of Proof와 같은 널리 알려진 알고리즘과 어떻게 다릅니까?
 
 **mgaruccio**
-So how much exists today? Could I build an app on the platform if I wanted to?
+그래서 현재 얼마나 많은 플랫폼이 존재합니까? 제가 원한다면 플랫폼에 앱을 만들 수 있습니까?
 
 **mike**
-In terms of the rate of progress, what is currently your greatest limiting factor - like funding, manpower, currently available technology?
+진행 속도와 관련하여 현재 자금 지원, 인력, 현재 사용 가능한 기술과 같은 것들 중 가장 중요한 제한 요소는 무엇입니까?
 
 **synth**
 
-> Can you explain a bit about the mesh net? Is it just an mpls network between nodes or is there something deeper going on?
+> 메쉬넷에 대해 간단히 설명해 줄 수 있나요? 이것은 노드 간의 mpls 네트워크입니까? 아니면 더 깊은 무언가가 있는 것입니까?
 
-It is not actually a meshnet. It is software defined networking, it is much more powerful than just meshnet. Its a new type of networking and new completely new protocol and networking namespace, independent of the existing internet.
-It supports source routing, while the existing internet does hot potato routing, so never achieves optimal latencies.
-It supports multi-homing, which IPv6 does not (Which is critical for when we have gigabit or terabit networking and multi-redundant bandwidth paths)
-It has default oppurunistic crypto, both link layer and end to end; so everything is encrypted by default, unlike the current internet.
-It has store and forward networking and will operate in Africa or even under conditions where latencies are in the minutes or hours and packet loss is excessive. Where existing protocols cannot operate reliability. It is much more robust than IPv4/IPv6 or TCP/ip
-It has improved privacy. If a packet takes a route that is 10 hops, each hop only knows the previous node in the route and the next node in the route. It is not like IPv4 where each packet gives the source and destination. The privacy level is something that does not exist on the current internet.
-IP addresses are replaced by public key and no one can read traffic to a destination, without knowing the private key of the public key that identifies the destination. The system does not need 3rd parties or certificate authorities. The design is a revolution.
+실제로는 메쉬넷이 아닙니다. 소프트웨어로 정의된 네트워킹이며, 단순한 메시넷보다 훨씬 강력합니다. 
+그것의 새로운 유형의 네트워킹이며,  새로운 완전한 프로토콜 및 네트워킹 네임 스페이스로써, 현재의 인터넷에서 독립적입니다.
+이것은 기존의 인터넷이 hot potato 라우팅을 하는 동안 소스 라우팅을 지원하므로, 최적의 대기시간이 필요하지 않습니다.
+이것은 멀티홈(multi-homing)을 지원합니다. IPv6는 아닙니다.(기가비트 또는 테라 비트 네트워킹 및 다중 중복 대역폭 경로가있는 경우에는 중요합니다.)
+링크 층과 종단 간 기본 복제 방지 암호가 있습니다.; 그래서 모든 것이 현재의 인터넷과 달리 기본적으로 암호화됩니다. 
+저장 및 전송 네트워킹을 갖추고 있으며 이것은 아프리카 또는 다른 열악한 조건, 대기 시간이 몇 분 또는 몇 시간이며 패킷 손실이 과도한 상황 등 
+기존 프로토콜이 신뢰성을 보장할 수 없는 곳에서도 작동합니다. 이것은 IPv4/IPv6 또는 TCP/ip보다 훨씬 강력합니다
+개인정보보호가 향상되었습니다. 
+한 패킷이 10 홉의 하나의 경로를 가지고 있는 경우, 각 홉은 경로의 이전 노드와 다음 노드만을 알고 있습니다. IPv4와 달리 각 패킷이 
+출발지와 목적지를 제공합니다. 
+개인정보보호 수준은 현재 인터넷에 존재하지 않는 것입니다. 
+IP 주소는 공개키로 대체되며 그 누구도 대상을 식별하는 공개키의 개인키를 모른다면 목적지의 트래픽을 읽을 수 없습니다.
+시스템은 제3자 및 인증기관의 인증을 필요로하지 않습니다. 
+이 설계는 혁명적입니다.
 
-> are those coins that are not in circulation in any cold wallets since only a portion is currently available according to CMC?
-
-The coins are locked into 100 addresses, each with 1 million coins each. And they are released sequentially.
-There is a complicated locking procedure and releasing new coins requires unamious consent and a shared secret among a group of developers. Anyone in the shared secret group can block distribution of more coins (to stop the problem that killed NXT). So by design the coins were supposed to be difficult to distribut, there had to be a good reason or justification before a distribution would be approved.
+> CMC에 따르면 이 코인은 현재 일부분만 사용할 수 있기 때문에 몇몇 비활성 지갑들(cold wallets)에 있는 코인들은 거래할 수 없나요?
+이 코인은 각각 1백 만 개의 코인을 보유하고 있는 100개의 계정에 묶여있습니다. 그리고 이것은 순차적으로 풀리게 됩니다.
+복잡한 잠금절차와 새로운 코인을 발급받기 위해서는 익명의 동의와 개발자 그룹 간 공유된 비밀이 필요합니다.
+공유된 비밀 그룹에 있는 누구나(소멸된 NXT의 문제를 막기 위해) 더 많은 코인의 분배를 차단할 수 있습니다.
+따라서 분배의 분배를 위한 설계는 어려우므로, 코인 분배가 승인되기 전에 타당한 이유 또는 정당성이 있어야 했습니다.
 
 **mike**
-What are the hardware requirements to operate a wireless Skywire (the name for the protocol described above) Node?
+무선 스카이와이어(위에서 설명한 프로토콜의 이름)노드를 작동하는데 필요한 하드웨어 요구사항은 무엇입니까?
 
 **arc-over-water**
-nxt i think is doing ok..
+제 생각에는 nex가 괜찮다고 생각해요.
 
 **synth**
 
-> How does the Network consensus algorithm Obelisk work and differ from widely known algorithms like Proof of Work and Proof of Stake?
+> 네트워크 컨센서스 알고리즘 Obelisk는 어떻게 작동하며 Proof of Work 및 Stake of Proof와 같은 널리 알려진 알고리즘과 어떻게 다릅니까?
 
 PoS and PoW use miners. Miners receive new coins every block as a block reward. So miners are making money and will fight to control the network. An everyone will suffer because the newly created coins represent inflation.
 Skycoin was designed to eliminate mining and eliminate the inflation. No block rewards, no new coins. And we needed to develop a new consensus algorithm to do that and there are only a few methods that work, for these constraints. The consensus algorithm is based upon Ben-Or's randomization procedure for achieving consensus in a distributed system, with some improvements for detecting adversarial or malicious nodes who are trying to prevent the consensus process.
