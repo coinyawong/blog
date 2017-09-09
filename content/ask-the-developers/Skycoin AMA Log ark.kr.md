@@ -112,184 +112,254 @@ PoS 및 PoW는 채굴을 사용합니다. 채굴자들은모든 블록에 대해
 새로 생성된 코인이 인플레이션을 일으키기 때문에 모두가 고통을 겪습니다. 
 스카이코인은 채굴을 제거하고 인플레이션을 없애기 위해 만들어졌습니다. 
 블록 보상, 새로운 코인이 없습니다. 그리고 우리는 이를 수행하기 위해 새로운 합의 알고리즘을 개발할 필요가 있었으며,
-이러한 제약을 만족하는 방법은 몇가지 밖에 없었습니다. for these constraints. The consensus algorithm is based upon Ben-Or's randomization procedure for achieving consensus in a distributed system, with some improvements for detecting adversarial or malicious nodes who are trying to prevent the consensus process.
-There are white papers on skycoin.net about the specifics. I would call it "network consensus" and it uses a sort of Web of Trust (WoT), where if the people creating blocks are doing a bad job or attacking the network, then the community can get rid of them. At the same time, the people who control the network, do not have any real power to attack the network except by slowing down transactions and being annoying, so even if they become malicious the only issue is how to get rid of them and select new people.
+이러한 제약을 만족하는 방법은 몇가지 밖에 없었습니다. 
+이 조건을 만족하기 위해서, 이 합의 알고리즘은 분산시스템 상에서 합의 달성을 위한 Ben-Or의 무작위 추출 절차에 기반하며, 
+합의 프로세스를 중단시키려는 적대적 또는 악의적 노드를 방어하는 능력을 향상시켜줍니다.
+이것은 skycoin.net의 화이트백서에 자세히 기술되어있습니다. 
+나는 그것을 "네트워크 합의"라고 부르며, 그것은 일종의 신뢰의 웹(WoT)을 사용합니다.
+블록을 만드는 사람들이 나쁜 일을 벌이거나 네트워크를 공격한다면 커뮤니티는 이를 제거할 수 있습니다. 
+동시에 네트워크를 제어하는 사람들은 트랜젝션 속도를 늦추거나, 성가신 일을 처리하는 것을 제외하고는 네트워크를 실제로 공격할 권한을 
+가지고 있지 않습니다.
+따라서 그들이 악성사용자가 된다면, 단지 어떻게 그들을 내쫓고 새로운 사람들을 선출할 것인지 고민하는 것만이 문제가 됩니다.   
+
 
 **mike**
-Any idea when Skywire will be released and ready to test on hardware nodes (testnet or mainnet)?
+언제 스카이와이어를 출시하고 하드웨어 노드(testnet 또는 mainnet)에서 테스트 할 것인지에 대해 계획이 있습니까?(테스트넷 또는 메인넷)
 
 **mgaruccio**
-So if there is no block reward what is the incentive to run a node?
+그렇다면 만약 블록 보상이 없다면 노드를 운영하는 인센티브는 무엇입니까?
 
 **vega**
-What will be the actual function of Skycoin (the coin itself)? Will the coin be used as currency, as transfer of value in and between all these various developing functionalities, semi-separate projects to tie them all together or it's function will be more limited?
+스카이코인(코인 자체)의 실제 기능은 무엇입니까? 코인은 화폐로 쓰일 것이며, 
+이 모든 다양한 개발 기능들 간 가치가 전가되거나, 모든 것을 합치는 반-개별 프로젝트가 되거나, 또는 뭔가 기능이 제한 되는 것인가요?
 
 **michaelthecryptoguy**
-Do you have an idea on the specs of a node that would be required? In the beginning? What about with 10,000 users? (edited)
+노드의 사양에 대한 생각이 있습니까? 처음에는요? 10,000명의 사용자에 대해 어떻게 생각하십니까?(편집됨)
 
 **synth**
 
-> nxt i think is doing ok..
+> 제 생각에는 nex가 괜찮다고 생각해요.
 
-There were three people that each owned 30% of the coin. One decided he wanted out and began dumping. NXT was over 150 million I think. When he started dumping, it basicly killed NXT.
-Skycoin's distribution was designed to stop dumping by the founders and early people.
-After Skycoin gets to 30% of the total coins distributed, there will probably a hard time lock on the remaining coins, so that a maximum of 5% of the remaining coins can be released per year. So the distribution for the other 70% of the coins will take a minimum of 14 years (and could be longer).
-We cannot even sell the rest of the coins, because if we sold 10% of the total now at $5 per coin, it would be 50 million or something and we cannot spend or even use that amount of money. Not at this stage.
-Ethereum spent 30 million or 70 million in their first year or two after the ICO and then nearly went bankrupt. Silicon Valley wages and offices etc. We have been very conservative and have kept costs down and kept them responsible. Now we have coins like EOS and they want to raise a billion dollars and have not produced anything yet, do not hav a blockchain and I have no idea what they would spend that money on, but they are throwing $350,000 parties in time square for marketing/PR etc...
+3명이 코인의 30%를 각각 소유했습니다. 한명은 나가기를 결심하고 덤핑을 시작했습니다. 제가 알고 있기로는 NXT는 1억 5천이(150 million) 넘었습니다.
+그가 덤핑을 시작했을 때, 이미 NXT는 끝났습니다.
+스카이코인의 배포는 설립자와 초기 투자자들의 덤핑을 막기 위해 고안되었습니다.
+스카이코인이 분배된 전체 코인의 30 %를 얻은 후, 풀리지 않은 나머지 코인을 얻기는 힘들 것이며, 매년 잔여 코인의 최대 5%가 출시될 수 있습니다.
+따라서 코인의 나머지 70 %에 대한 분배는 최소14 년이 소요됩니다.(더 길 수도 있습니다.)
+우리는 코인의 보유분을 팔 수 없습니다. 우리가 코인 당 5 달러로 10 %를 팔면 5,000만 달러가 될 것인데, 
+우리는 이것을 쓰거나 전액을 사용할 수 없습니다. 아직 이 단계가 아닙니다.
+이더리움은 ICO 이후 1, 2년 동안 3천만 또는 7천만 달러를 소비한 다음 거의 파산했습니다. 
+실리콘 밸리의 임금 및 사무실 등, 우리는 매우 절약하고 있으며, 그것에 대해 책임감을 가지고 있습니다.
+이제 우리는 EOS와 같은 동전을 가지고 있으며, 그들은 10억 달러를 모으고 싶어하지만 아직 아무 것도 생산하지 않았고, 
+블록 체인을 소유하지 않았으며, 그 돈을 어떻게 쓸지 모르지만, 
+마케팅을 위해 시간 당 35만 달러를 소비하고 있습니다./ 홍보 등 ...
 
 **arc-over-water**
-what prevents you from selling? anybody can spend that amount of money?
-nxt is a newer platform than sky, market value is $220 million plus $166 million, I get what you are saying but the evidence is wrong. Community is huge and active in Nxt. But you say it is killed, i dont get it?
+무엇이 당신이 판매를 하지 못하게 합니까? 누구나 수익금을 쓸 수 있습니까? nxt는 sky보다 나중에 나온 새로운 플랫폼이며, 
+시장 가치는 2억 2천만 달러와 1억6천 6백만 달러입니다. 
+나는 당신이 말하는 것을 들었지만, 증거는 다릅니다.
+Nxt의 커뮤니티는 거대하며 활동적입니다. 하지만 당신이 망했다고 말했는데, 내가 그걸 알아내지 못합니까?
 
 **synth**
 
-> What will be the actual function of Skycoin (the coin itself)? Will the coin be used as currency, as transfer of value in and between all these various developing functionalities, semi-separate projects to tie them all together or it's function will be more limited?
+> 스카이코인(코인 자체)의 실제 기능은 무엇입니까? 코인은 화폐로 쓰일 것이며, 
+이 모든 다양한 개발 기능들 간 가치가 전가되거나, 모든 것을 합치는 반-개별 프로젝트가 되거나, 또는 뭔가 기능이 제한 되는 것인가요?
 
-Yes. Bitcoin has no purpose. An altcoin does two things - check your balance - send money to other people
-Two features - check balance - send
-For a coin to have value, people need to be forced to buy it to consume specific services. There has to be stuff for people to spend the coin on, that there is demand for.
-So Bitcoin is really just a purely speculative asset. It generates no cashflow and its value is determined by perception or social convention.
-Ideally, Skycoin would start off as a "better Bitcoin" (faster, more secure, new algorithm, simplier, etc), then over time we would build up an ecosystem and have some type of backing and tie the coin's value into the network and usebase.
-The mesh netork (skywire) is good, because it gives something for people to do to get coins and it allows people to consume the coins. You can run your internet traffic through a VPN that tunnels over Skywire and maybe it will be a nominal amount (actually absurdly small amount of money), but there would be real economic activity and a real userbase and community using the coin. Not just speculation.
-Later on the scope is much wider.
+네, 비트코인은 아무런 목적이 없습니다. altcoin은 두 가지 기능을 합니다 - 당신의 잔액을 확인하고 - 다른 사람들에게 돈을 보내줍니다. 
+두 가지 기능 - 잔액 확인 - 보내기
+코인에 가치를 부여하기 위해서는, 사람들이 특정 서비스를 사용하기 위해 그것을 구매해야 합니다.
+사람들이 코인을 쓸 재화가 있어야하며, 거기에는 수요가 있어야합니다. 
+따라서 비트코인은 실제로 순전히 투기 자산입니다. 
+현금 흐름을 발생시키지 않으며 그 가치는 인식 또는 사회적 상황에 따라 결정됩니다. 
+이상적으로, 스카이코인은 "더 나은 비트코인"(더 빠르고, 더 안전하고, 새로운 알고리즘, 단순함 등)으로 출발할 것이고, 
+시간이 지남에 따라 우리는 생태계를 구축하고, 몇 가지 종류의 투자를하고 네트워크와 사용자 기반으로 코인의 가치를 고정시킬 것입니다.
+메쉬 네트워크(스카이와이어)는 사람들이 코인을 얻기 위해 무엇인가를 주고, 사람들이 동전을 소비할 수 있기 때문에 좋은 것입니다.
+당신은 스카이와이어를 통해 터널링하는 VPN을 통해 당신의 인터넷 트래픽을 실행할 수 있으며,  
+아마도 명목상의 금액(사실은 엄청나게 적은 금액)이지만, 실제 경제 활동과 실제 사용자 기반 및 커뮤니티가 코인을 사용해서 이루어 질 것입니다.
+단지 투자가 아닙니다. 나중에 범위가 훨씬 넓어집니다.
 
 **arc-over-water**
-So the skycoin wallet will be a VPN for our internet usage?
+그래서 스카이코인 지갑은 인터넷 사용을 위한 VPN이 될 것입니까?
 
 **synth**
 
-> nxt is a newer platform than sky, market value is $220 million plus $166 million, I get what you are saying but the evidence is wrong. Community is huge and active in Nxt. But you say it is killed, i dont get it?
+> nxt는 sky보다 나중에 나온 새로운 플랫폼이며, 시장 가치는 2억 2천만 달러와 1억6천 6백만 달러입니다. 
+나는 당신이 말하는 것을 들었지만, 증거는 다릅니다.
+Nxt의 커뮤니티는 거대하며 활동적입니다. 하지만 당신이 망했다고 말했는데, 내가 그걸 알아내지 못합니까?
 
-What I am saying, is that NXT would be a lot further along than it is now and probably around where Ethereum is, except for that mistake in the distribution and keeping it too concentrated. It set them back by years. They did not consider what the impact on the price would be, over the long term, when one of the early whales started selling off or decided he wanted out.
+제가 말한 것은 NXT가 이더리움과 현재보다 많은 발전가능성이 있을 것이라는 것입니다. 배포와 과다 집중 문제를 제외하고 말입니다.
+그것은 몇 년전으로 그것을 되돌려 놓았습니다.
+초기 고래들 중 하나가 매각을 시작하거나 그것을 고려할 때, 장기적으로 그것이 가격에 어떤 영향이 있을 지를 전혀 고려하지 않았습니다.
 
 **arc-over-water**
-But they did the same again with IOTA, same lead dev.. Its over a $Billion
-they released and let the market price distribute
+그러나 IOTA의 리드개발자도 똑같은 행동을 했고... 그들이 배포한 시장 가격은 100만 달러를 넘습니다.
 
 **synth**
 
-> So the skycoin wallet will be a VPN for our internet usage?
+> 그래서 스카이코인 지갑은 인터넷 사용을 위한 VPN이 될 것입니까?
 
-The VPN is just one application, that uses bandwidth over Skywire. There are several things in development.
-This is a BBS like 4chan, that is completely distributed, with CXO. https://github.com/skycoin/bbs
-It will run over Skywire also, This is like building a whole new internet from scratch. The apps that run on it are going to specialized and privacy focused, etc GitHub skycoin/bbs Contribute to bbs development by creating an account on GitHub.
+VPN은 단순 어플리케이션으로, 스카이와이어의 대역폭을 사용합니다.
+개발에는 몇 가지 사항이 있습니다. CXO와 함께 완전히 배포된 4chan와 같은 BBS입니다. https://github.com/skycoin/bbs Skywire
+이것 또한 스카이와이어를 통해 실행됩니다. 이것은 처음부터 완전히 새로운 인터넷을 구축하는 것과 같습니다. 
+GitHub skycoin / bbs GitHub에 계정을 만들어 bbs 개발을 하고 있습니다.
 
 **mike**
-So Skycoin is a Proof of Resource coin where its value is actually backed by provision of a useful service, in this case private and secure networking? Are there plans to add decentralized storage and even distributed processing to it?
+그래서 스카이코인은 리소스 기반 코인이며, 이것의 가치는 유용한 서비스의 제공에 의해 뒷받침되며, 이것은 개인적이며 안전한 네트워킹이라는 것입니까?
+분산 스토리지와 분산 포로세싱을 추가할 계획이 있습니까?
 
 **arc-over-water**
-so these 100 separate million coin accounts will be 100 ICOs or how is the distribution patterned? is it written into the code or up to the devs?
+그래서 100개의 개별적인 계정에 100만 개의 코인이 있는 100 ICO가 될 것입니까? 배포 패턴은 어떻게 됩니까?
+그것은 코드 또는 개발현황에 기록됩니까?
 
 **rockyj**
-!calculate
+!계산해주세요.
 
 **slackbot Custom Response**
 https://docs.google.com/spreadsheets/d/1FGo3FkC3uSWXGHatPQyny2brMWjAIJsHFCR-Lhkl_m0/edit#gid=0
 
 **synth**
 
-> So if there is no block reward what is the incentive to run a node?
+> 그렇다면 만약 블록 보상이 없다면 노드를 운영하는 인센티브는 무엇입니까?
 
-running a consensus node does not cost anything. You can run it on a raspberry pi.
-The important thing is that if the people doing consensus are doing a bad job, that the community can get rid of them and replace them. The other important thing, is that they can be audited and determined automatically if they are obeying the protocol.
-the miners in skycoin are not very powerful and cannot do anything except slow down transactions. They are unable to spend other people's money without their private keys, so the consensus/mining nodes are almost irrelevent. It is not like Bitcoin where the miners can hold the network hostage or act selfishly (driving up the transactions fees for their own personal benefit and delaying any innovations that would improve bitcoin for everyone, etc).
+합의 노드를 운영하는 것은 비용이 들지 않습니다. 
+당신은 라즈베리 파이로 그것을 운영할 수 있습니다.
+다른 중요한 것은, 합의를 하는 사람들이 나쁜 행동을 하는 경우, 커뮤니티가 그들을 제거하고 대체할 수 있다는 것입니다. 
+또 다른 중요한 점은, 그들이 프로토콜을 준수하고 있는지를 자동으로 감사하고 결정할 수 있다는 것입니다.
+스카이코인의 채굴자는 강력한 권한을 행사할 수 없으며 트랜젝션의 속도저하를 제외하고는 아무 것도 할 수 없습니다.
+그들은 개인키 없이 다른 사람들의 돈을 쓸 수 없으므로 합의/채굴 노드는 거의 무의미 합니다. 
+채굴자들이 네트워크 인질을 붙잡거나 이기적으로 행동 할 수 있는 비트 코인과는 다릅니다.
+(개인 이익을 위해 거래 수수료를 높이고 모든 사람을 위한 비트 코인 발전을 지연시키는 등)
 
-> So Skycoin is a Proof of Resource coin where its value is actually backed by provision of a useful service, in this case private and secure networking? Are there plans to add decentralized storage and even distributed processing to it?
+> 그래서 스카이코인은 리소스 기반 코인이며, 이것의 가치는 유용한 서비스의 제공에 의해 뒷받침되며, 이것은 개인적이며 안전한 네트워킹이라는 
+것입니까? 분산 스토리지와 분산 포로세싱을 추가할 계획이 있습니까?
 
-We have decentralized storage, which is called CXO. But only the bandwidth is monetized by Skywire. We do not nickle and dime and try to attach a coin cost to every API call. Everything that should be free is free. So its a different philosphy.
-On top of CXO we also have distributed social media applications (simmilar to Steemit)
-CXO is very similar to IFPS, but simplier and designed for our internal infrastructure and with our crypto standards, instead of being a mismash.
+우리는 CXO라고 불리는 분산 스토리지를 가지고 있습니다. 그러나 단지 대역폭은 스카이와이어에 의한 수익만을 창출합니다. 
+우리는 모든 API 호출에 코인 비용을 부과하지 않고 한 푼도 지불하지 않습니다.
+무료가되어야 하는 모든 것은 무료입니다. 그래서 그것은 다른 철학을 가지고 있습니다. 
+CXO는 소셜 미디어 애플리케이션(Steemit과 유사함)을 배포했습니다. 
+CXO는 IFPS와 매우 유사하지만 내부 인프라 및 암호 표준을 사용하여 간단하게 설계되었습니다.
 
 **mike**
-Is it possible for Skycoin to choose the best paths and route around bad or slow nodes as damage to the network, in effect reducing their impact on consensus?
-looks like you answered the question above while I was typing...
+스카이코인은 네트워트 상의 피해로 인한 악성 노드 또는 지연 노드 상에서 최적의 경로와 라우트를 선택하는 것이 가능합니까? 
+합의알고리즘 상에서 이것의 피해를 줄이는 것이 가능합니까?
+내가 타이핑하는 동안 위의 질문에 답한 것처럼 보이네요...
 
 **tranzer**
-How many tx/s can skycoin handle? What are block times?
+스카이코인은 얼마나 많은 tx/s를 처리할 수 있습니까? 블록 시간이란 무엇입니까??
 
 **thrice.pi**
-300 right? ^
+300 맞죠? ^
 
 **arc-over-water**
-on your website it says you will have a NON- Turing complete lisp language?
+당신의 웹사이트에서는 당신이 Non-Turing 완전언어를 사용할 것이라고 써 있습니까? 
 
 **synth**
 
->so these 100 separate million coin accounts will be 100 ICOs or how is the distribution patterned? is it written into the code or up to the devs?
+>그래서 100개의 개별적인 계정에 100만 개의 코인이 있는 100 ICO가 될 것입니까? 배포 패턴은 어떻게 됩니까?
+그것은 코드 또는 개발현황에 기록됩니까?
 
-We will have a distribution page, up on the website soon. Its complicated.
-Skywire, is designed to pull coins out of circuation, through a sort of tithe on network activity and it does automatic buy backs effectively. So the distribution will actually peak and then decline. But one distribution is from the locked coins, and the locked coins are freed, then circulate, then end up at the foundation (from the skywire tithe are pulled out of circulation), but still count towards the free float.
-The coin holders also receive a coinhour dividend and there will be a market rate conversion between coin hours and Skycoins and coinhours are the actual currency for the Skywire network. If you do not have enough coin hours, then you sell Skycoin for CoinHour at the market rate, to purchase bandwidth; but if you have a lot of coins then you have enough coin hours for downloading movies or VPN or whatever you are doing and it is essentially free.
-So there is a dual level economic structure. Both with coin buybacks to pull coins out of circulation and with a dividend or incentive to encourage users to hold the coin if they are using the network.
+곧 웹 사이트에 배포 페이지가 생길 것입니다. 이것은 복잡한 문제입니다.
+스카이와이어는 네트워크 활동에 대한 일종의 십일조를 통해 코인을 순환에서 벗어나게 하기 위해 개발되었으며, 
+이것은 자동으로 배포를 효과적으로 조절합니다.
+따라서 배포는 실제로 정점에 도달한 후 감소합니다.
+그러나 하나의 배포은 잠긴 코인에서 이루어지며, 잠긴 코인은 풀린 후 순환하고 소멸됩니다.(스카이와이어의 십일조는 순환에서 제외됩니다.) 
+그러나 여전히 많은 양의 코인이 네트워크에 있습니다.
+코인 보유자에게는 코인하워(coinhour)라는 배당금이 지급되며, 코인하워(coinhour)와 스카이코인 사이에 시장 환율이 변환될 것이고,
+코인하워(coinhour)는 스카이와이어 네트워크의 실제 통화입니다. 
+코인하워(coinhour)가 충분하지 않으면 코인하워(coinhour)를 위해 스카이코인을 시장 가격으로 팔아 대역폭을 구입하십시오;
+하지만 코인이 많다면 영화나 VPN 등을 다운로드 할 수 있는 충분한 코인하워(coinhour)를 가질 수 있으며 이것은 본질적으로 무료입니다. 
+따라서 이중 수준의 경제 구조가 있습니다. 둘 다 코인을 매매하면서 코인을 매도하고 사용자가 네트워크를 사용하는 경우
+코인을 매수하도록 유도하는 배당금이나 인센티브를 제공합니다.
 
 **arc-over-water**
-so there will be two currencies, holding one reserves the other
+그래서 2가지 종류의 통화가 있고, 하나는 보유하고 다른 하나는 소비하네요.
 
 **synth**
 
-> Is it possible for Skycoin to choose the best paths and route around bad or slow nodes as damage to the network
+> 스카이코인은 네트워트 상의 피해로 인한 악성 노드 또는 지연 노드 상에서 최적의 경로와 라우트를 선택하는 것이 가능합니까? 
 
-Yes. This is very important.
-The person dialing a connection, chooses the path of the connection!
-You can choose the lowest latency path for video games or Skype, and choose highest throughput paths for video downloads etc. Or can choose paths through specific nodes or facilities or countries, for security concerns and to minimize the number of points that the traffic could be intercepted at.
+네, 이것은 매우 중요합니다.
+연결을 시도하는 사람은, 연결 경로를 선택합니다!
+당신은 비디오 게임이나 스카이프를 위해 최소 대기경로를 선택할 수 있으며, 비디오 다운로드 등을 위해 최고 처리 경로를 선택할 수 있습니다.
+또는 특정 노드나 시설 또는 국가 경로를 선택할 수 있습니다. 트래픽이 탈취될 수 있는 보안 문제와 트래픽이 발생할 수 있는 지점 수를 
+최소화 할 수 있습니다.
 
 **mike**
-Will Skycoin still have the node subsidy plan for setting up and registering the mesh nodes like originally planned?
+스카이코인은 원래 계획대로 메쉬 노드를 설정하고 등록하기 위한 노드 보조금 계획을 여전히 갖고 있습니까?
 
 **dr10**
-When do you plan to be able to present your planned technology and services to the masses? When can they use what you try do accomplish?
+언제 대중에게 계획된 기술과 서비스를 제공할 계획입니까? 그들이 당신들이 성취한 것을 언제 사용할 수 있습니까?
 
 **synth**
 
-> on your website it says you will have a NON- Turing complete lisp language?
+> 당신의 웹사이트에서는 당신이 Non-Turing 완전언어를 사용할 것이라고 써 있습니까? 
 
-That is probably an error. LOL. We will have a new website soon.
-There is no scripting language on the skycoin blockchain. Each transaction is constant time (for efficiency and security and to achieve the highest transaction rate and to keep the coin simple).
-However, we have a language called CX in development, which is a next generation language that is beyond "smart contracts" and the toy things on ethereum. It uses immutable datastructures and is something completely new. Most of the skycoin "smart contracts" will probably be off blockchain or in personal blockchains and we do not want to shove all the data onto the main chain, because forcing everyone to download everyone one elses contracts it the world is just spamming the blockchain to death. There are better ways to do it.
+이것은 아마 오류일 것입니다. LOL. 우리는 곧 새로운 웹 사이트를 갖게 될 것입니다.
+스카이코인 블록체인은 스크립팅 언어가 없습니다.
+각 거래는 일정한 시간(효율성과 보안 및 가장 높은 거래률을 달성하고 코인을 간단하게 유지하기 위해)에 이루어집니다.
+그러나 우리는 CX라는 개발 언어를 사용합니다.이 언어는 "스마트 계약"을 넘어서는 차세대 언어이며 이더리움 상의 장난감입니다.
+그것은 변조 불가능한 데이터 구조를 사용하며 완전히 새로운 것입니다. 
+스카이코인"스마트계약"의 대부분은 블록 체인 밖에서 실행되거나 개인 블록체인에서 실행될 것입니다. 
+우리는 모든 데이터를 메인 체인에 유지하고 싶지 않고, 왜냐하면 모든 사람이 모든 데이터를 다운로드하도록 강요한다면 그것은 단지 스팸이고
+블록체인은 죽을 것이기 때문입니다. 더 좋은 방법이 있습니다.
 
-> Will Skycoin still have the node subsidy plan for setting up and registering the mesh nodes like originally planned?
+> 스카이코인은 원래 계획대로 메쉬 노드를 설정하고 등록하기 위한 노드 보조금 계획을 여전히 갖고 있습니까?
 
-Yes. We are going to get from 20% to 30% distributno of the coins, through network incentives for people running Skywire nodes, consensus nodes and services.
-I think this is going to be massive for marketing. And it is the best way to get the coins out to the users, instead of all the coins being held by whales
+네, 우리는 스카이와이어 노드, 합의노드 및 서비스를 실행하는 사람들을 위해 네트워크 인센티브를 코인의 20%에서 30%까지 분배할 것입니다. 
+나는 이것이 엄청난 마케팅이 될 것이라고 생각합니다. 모든 코인을 고래가 가지고 있는 대신 사용자에게로 가지고 오는 것이 가장 좋은 방법입니다.
 
 **samuelvihollandia**
-I read how you suggest Skycoin could be used for VPN connections, is this the largest use case you see?
+나는 스카이코인이 VPN 연결에 사용될 수 있다고 당신이 제안한 것을 읽었습니다. 이것이 당신이 알고 있는 가장 큰 활용 사례입니까?
 
 **arc-over-water**
-Maidsafe has been working on the redesign of the net for about ten years, what are you doing the same and what different?
+Maidsafe는 약 10 년 동안 넷의 재설계를 위해 노력해 왔는데, 그들이 하고 있는 것과 어떤 것이 똑같고 어떤 것이 다릅니까?
 
 **synth**
 
-> I read how you suggest Skycoin could be used for VPN connections, is this the largest use case you see?
+> 나는 스카이코인이 VPN 연결에 사용될 수 있다고 당신이 제안한 것을 읽었습니다. 이것이 당신이 알고 있는 가장 큰 활용 사례입니까?
 
-No. This is just something easy, that we have working. Its not the largest applicatoin at all.
-80% of internet traffic right now is bitorrent and the bitorrent sites are being systematically shutdown and driven off the internet. They wont go away, but will jut go underground. What.cd (largest music tracker, with 800k people) was just shut down, bakabt (largest anime tracker) has gone closed registration, Nyantorrent etc...
-User communities of millions of people will be migrating from the clearnet (the existing corporate shit-net) to the "new internet". We are going to see people migrating by the millions, whole user communities of millions of people.
+아니오. 그것은 단지 우리가 일하고 있는 것 중 가장 쉬운 부분입니다. 그것은 가장 큰 어플리케이션이 아닙니다.
+현재 인터넷 트래픽의 80 %는 비트토렌토(bitorrent)가 점유하고 있으며, 비트토렌토(bitorrent) 사이트는 체계적으로 폐쇄되어 인터넷에서 
+사라질 것입니다. 그들은 완전히 떠나지 않을 것이지만, 바닥에 떨어질 것입니다. What.cd(최대 규모의 음악 사이트, 약 800k 명)가 막 폐쇠되었으며, 
+bakabt (최대 애니메이션 사이트)는 등록이 종료되었고, Nyantorrent 등...
+수백만 명의 사용자 커뮤니티가 Clearnet(기존 기업의 쓰레기-망)을 "새 인터넷"으로 변경합니다. 
+우리는 수많은 사람들이 수백만 명의 전체 사용자 커뮤니티로 이동하는 것을 보게 될 것입니다.
 
 **arc-over-water**
-Are you a corporation or foundation or charity? Registered? I am not sure i have seen anything about who you are? What is the dev team size? Background? - Maidsafe is open and clear so is IOTA and Stellar etc. Can you let us know who you and your team are? Especially you are talking about 15 year and up obligations..
+당신은 법인입니까 아니면 재단입니까 아니면 자선 단체입니까? 등록? 나는 아무것도 확신하지 못합니다. 당신은 누구입니까? 
+개발(dev) 팀의 크기는 얼마입니까? 배경? - Maesafe는 개방적이고 명확하므로 IOTA와 Stellar 등이 있습니다. 
+당신과 당신의 팀이 누구인지 알려줄 수 있습니까? 특히 당신은 15년 이상의 미래에 대해 이야기하고 있습니다.
 
 **techbytes**
-Do we need to hold skycoin to run Skywire nodes or consensus nodes like masternodes from other coins?
+우리가 스카이와이어 노드를 실행하려면 스카이코인, 다른 동전의 마스터노드와 같은 합의 노드가 필요합니까?
 
 **synth**
 
-> Maidsafe has been working on the redesign of the net for about ten years, what are you doing the same and what different?
+> Maidsafe는 약 10 년 동안 넷의 재설계를 위해 노력해 왔는데, 그들이 하고 있는 것과 어떤 것이 똑같고 어떤 것이 다릅니까?
 
-Maidsafe is in version 2 or 3. Maidsafe will not have a real coin until version 9. Each version takes them about two or three years. Maidsafe will not be "done" or ready for atleast 18 years at this rate.
-Skycoin has been in development for ~6 years and the meshnet for 4 years and it will be finished in a few months. To the poin that people can start using it.
-Skycoin is similar to maidsafe in the objective, but has a different approach and architecture and primitives. We did not try to do everything, but focused on a smaller, tractable core and got that done.
-There will be multiple projects in this space, but few teams are able to plan on the time horizon necisary for building a new internet or able to design each of the components of a system this large, or figure out how to do it so that it is useful at each stage of construction of a project that may take a decade. (edited)
+Maidsafe는 버전2 또는 3입니다. Maidsafe는 버전 9까지 실제 코인을 가지지 않습니다. 
+각 버전에는 약 2 ~ 3 년이 소요됩니다. Maidsafe는이 비율로 적어도 18 년 동안 "완료"되거나 준비되지 않습니다. 
+스카이코인은 ~ 6 년 동안 개발 중이며 4 년 동안 메쉬넷을 구축했으며 몇 달 후에 완성 될 것입니다. 
+사람들은 그것을 사용할 수 있습니다.
+스카이코인은 목적에 있어서 maidsafe와 비슷하지만, 접근 방식과 설계 및 근본이 다릅니다. 
+우리는 모든 일을 하려고 하지는 않았지만, 작고 다루기 쉬운 핵심에 초점을 맞추었습니다. 
+이 분야에는 여러 개의 프로젝트가 존재하지만, 단지 몇몇 팀만이 정해진 시간 안에 새로운 인터넷을 구축하거나 시스템의 각 구성 요소 설계를 
+계획할 수 있으며, 또는 이 거대한 시스템의 각 기능을 디자인 할 수 있고, 10년이 걸릴 수도 있는 이 프로젝트의 각 단계별 구성을 어떻게 
+효율적으로 실행할 것인지를 알아낼 수 있습니다.(편집됨)
 
 **mike**
-Can you see a way for Ark and Skycoin to build on each other in a synergistic manner? I'm all for not reinventing the wheel, especially when it looks like it will be replaced with antigravity like Skycoin.
-I see Skycoin as essentially replacing TCP/IP and providing mesh network type functionality at the hardware level, Ark would run on top of it as a top level application layer.
+Ark와 스카이코인이 시너지 효과를 발휘할 수있는 방법을 볼 수 있습니까? 나는 바퀴를 위해 투자하지 않을 것이며, 
+특히 이것은 스카이코인 같은 것으로 대체되는 것으로 보입니다.  
+Skycoin이 본질적으로 TCP/IP를 대체하고 하드웨어 레벨에서 메쉬 네트워크 유형의 기능을 제공하는 것을 보았을 때, 
+Ark는 최상위 애플리케이션 레이어로서 작동할 것입니다.
 
 **arc-over-water**
-are you up to date on Maidsafe, they are nearly out of Alpha and its more like release early next year? But that being said, Maidsafe says once it is released it is like a virus or AI type, so does Tau Chain, and also Autonomic by HunterMinerCrafter, are we heading towards AI with Maid, Sky Tau and Autonomic?
+Maidsafe에 대한 최신 정보를 제공합니다. 그들은 Alpha에서 거의 벗어났으며 내년 초에 출시될 예정입니다. 
+하지만 Maidsafe는 그것이 출시되면 바이러스나 인공 지능(AI) 유형과 마찬가지로 타우 체인(Tau Chain)과 헌터 
+마이너 크라프터(HunterMinerCrafter)의 오토 노믹 (Autonomic)도 AI를 지향하고 있다고 하는데, 
+스카이 타우(Sky Tau) 및 오토 노믹 (Autonomic)은? 
 
 **dr10**
-smartbridge now! :kappa:
+스마트 브리지가 왔다! : 카파 :
 
 **mike**
 So Skycoin would act as a sort of global decentralized cloud server to build on top of.
