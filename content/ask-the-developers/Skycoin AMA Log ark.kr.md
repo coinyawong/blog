@@ -107,8 +107,12 @@ IP 주소는 공개키로 대체되며 그 누구도 대상을 식별하는 공�
 
 > 네트워크 컨센서스 알고리즘 Obelisk는 어떻게 작동하며 Proof of Work 및 Stake of Proof와 같은 널리 알려진 알고리즘과 어떻게 다릅니까?
 
-PoS and PoW use miners. Miners receive new coins every block as a block reward. So miners are making money and will fight to control the network. An everyone will suffer because the newly created coins represent inflation.
-Skycoin was designed to eliminate mining and eliminate the inflation. No block rewards, no new coins. And we needed to develop a new consensus algorithm to do that and there are only a few methods that work, for these constraints. The consensus algorithm is based upon Ben-Or's randomization procedure for achieving consensus in a distributed system, with some improvements for detecting adversarial or malicious nodes who are trying to prevent the consensus process.
+PoS 및 PoW는 채굴을 사용합니다. 채굴자들은모든 블록에 대해 새로운 코인을 블록 보상으로 받습니다.
+따라서 채굴자들은 돈을 벌고 있으며 네트워크를 통제하기 위해 노력할 것입니다. 
+새로 생성된 코인이 인플레이션을 일으키기 때문에 모두가 고통을 겪습니다. 
+스카이코인은 채굴을 제거하고 인플레이션을 없애기 위해 만들어졌습니다. 
+블록 보상, 새로운 코인이 없습니다. 그리고 우리는 이를 수행하기 위해 새로운 합의 알고리즘을 개발할 필요가 있었으며,
+이러한 제약을 만족하는 방법은 몇가지 밖에 없었습니다. for these constraints. The consensus algorithm is based upon Ben-Or's randomization procedure for achieving consensus in a distributed system, with some improvements for detecting adversarial or malicious nodes who are trying to prevent the consensus process.
 There are white papers on skycoin.net about the specifics. I would call it "network consensus" and it uses a sort of Web of Trust (WoT), where if the people creating blocks are doing a bad job or attacking the network, then the community can get rid of them. At the same time, the people who control the network, do not have any real power to attack the network except by slowing down transactions and being annoying, so even if they become malicious the only issue is how to get rid of them and select new people.
 
 **mike**
