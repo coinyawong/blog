@@ -362,314 +362,366 @@ Maidsafe에 대한 최신 정보를 제공합니다. 그들은 Alpha에서 거�
 스마트 브리지가 왔다! : 카파 :
 
 **mike**
-So Skycoin would act as a sort of global decentralized cloud server to build on top of.
-To communicate, it is more like sharing encrypted files to selected recipients than it is sending messages or hosting sites on a specific server.
+그래서 스카이코인은 세계적인 글로벌 분산 클라우드 서버를 구축하기 위해서 동작합니다.
+통신하기 위해서, 특정 서버에서 메시지 또는 호스팅 사이트를 보내는 것보다는 선택한 수신자에게 암호화된 파일을 공유하는 것이 좋습니다. 
 
 **synth**
 
->Are you a corporation or foundation or charity? Registered? I am not sure i have seen anything about who you are? What is the dev team size? Background?
+> 당신은 법인입니까 아니면 재단입니까 아니면 자선 단체입니까? 등록? 나는 아무것도 확신하지 못합니다. 당신은 누구입니까? 
+개발(dev) 팀의 크기는 얼마입니까? 배경?
+제가 알기로는 스카이코인을 위해 일하거나 큰 기여를 하고 있는 사람들이 60명이 넘습니다. 이것은 본질적으로 darknet으로부터 시작된 프로젝트입니다.
+많은 기여자들은 익명으로 활동합니다. 그들 중 일부는 군용 산업단지에 있어서 보안 제약사항이 있으며, 그중 한 명은 샌디에고 해군 방위 연구소에서 근무하고 있습니다. 그 곳에서 자금 지원을 받아 네트워크 프로토콜에 대한 많은 아이디어가 공공연구기관에서 나왔습니다.
+우리는 또한 비트코인 초창기 개발자들이 있으며, 비트코인 핵심 개발자 이전의 하드코어 개발자들을 많이 보유하고 있습니다. 
+중국 쪽에는 알리바바 및 통신 초기 투자자들이 있습니다. 그리고 중국 항공 그룹(4개의 민영 항공 회사 소유)과 시노펙(Sinopec)
+(현재 세계2위 상장법인)과 조종사들이 있습니다.
+다음으로 우리는 이스라엘과 미국의 정보 기관 요원이 있으며, 아마도 그들은 돈 세탁 또는 심리전을 하고 있을 것입니다. 
+그들은 어떤 이유에서인지 금방 드러났습니다. 이 그룹들은 이 코인의 "어플리케이션"과 트랜젝션 정보보호 향상방법 및 CoinJoin 프로토콜의 세부사항에 
+대해 매우 관심이 있는 것으로 보입니다. 우리는 법의학 회계에 경험이 풍부한 사람들로부터 많은 조언을 받았고, 그들이 무엇을 알고 싶어하는지 
+그리고 그들이 비트코인에 대해 부족한 점과 메타데이터가 어디에서 유출되었다고 생각하는 지에 대해 알아냈습니다. 
+다음으로 각 분야의 박사 급의 사람들은 분산형 데이터베이스 합의 알고리즘을 연구하고 있으며, 또 다른 그룹은 프로그래밍 언어를 연구 중입니다.
+다음으로 많은 사람들이 deep darknet, anon, frog twitter 그리고 chpher punks 그리고 비트토렌트(bitorrent) 커뮤니티에 있습니다.
+(실제로는 2개의 분리된 그룹으로 구성) 그리고 러시아 darknet 커뮤니티의 사람들이 있습니다. 우리는 8명의 Ivan이 있습니다.(편집됨)
+> 제가 보기에 스카이코인은 본질적으로 TCP/IP를 대체하고 하드웨어 레벨에서 메쉬 네트워크 유형 기능을 제공하며, Ark는 최상위 애플리케이션 
+레이어로 작동합니다.
 
-I think there are over ~60 people who have worked on Skycoin or have made major contributions. Its really a project from the darknet.
-Many of the contributors are anonymous. Some of them have security clearances and were in the military industrial complex and one of them worked at the San Diego Naval Defence Research Lab and a lot of the idea for the networking protocols came out of public sector academic researched, funded from there.
-We also have a lot of very very early Bitcoin people, hardcore crypto people that predate Bitcoin and an Ethereum core developer, etc..
-On the Chinese side we have an early investor in Alibaba and telecom investor. And are doing pilot with china aviation group (owns four publicly traded airline companies) and apparently now Sinopec (which is 2nd largest publicly traded corporation in world).
-Then we have people who are part of israeli and US intelligence and are probably doing some sort of money laundering or phychological operations background, who just showed up for some reason. This group seems very interested in the "applications" of these coins and how to improve tranaction privacy and the specifics of the CoinJoin protocol implementation. We got a lot of advice from people experienced in forensic accounting and what they wanted to see and where they felt Bitcoin was deficient and where it leaked metadata.
-Then a bunch of PHD level people doing research into distributed database consensus algorithms and another group doing programming language research.
-Then a lot of people from the deep darknet, anon, frog twitter and cipher punks and bitorrent communities. (really should be listed as two seperate groups). And people from the Russian darknet community. We have like eight Ivans. (edited)
-> I see Skycoin as essentially replacing TCP/IP and providing mesh network type functionality at the hardware level, Ark would run on top of it as a top level application layer.
-
-Yes. The key functionality is two things - connecting to people by public key (networking) - distributing self validating, immutble data peer to peer (transactions, blocks etc... content addressible storage)
-And you can build almost anything on those two building blocks. The whole internet will eventually be rewritten on top of those primitives and it will replace many of the existing protocols.
+네, 그 키는 2가지 기능으로 작동합니다. - 공개키로 사람들에게 연결하는 것(네트워킹) - 자체검증 분배, P2P(peer to peer)를 활용한 데이터 변조불가
+(트랜젝션, 블록 등...컨텐츠 주소지정이 가능한 저장소)
+그리고 당신은 두 빌딩 블록에서 거의 모든 것을 구축할 수 있습니다. 전체 인터넷은 궁극적으로 원본 위에 다시 쓰여질 것이고 많은 기존 프로토콜을 
+대신할 것입니다.
 
 **arc-over-water**
-Who is the entity that is funding this? I think you have done 2 ICOs? How much did you receive? The first was 10c and the second was @ 50c per coin, released 6 million, is that correct?
+자금을 지원하는 단체는 누구입니까? 나는 당신이 2개의 ICO를 끝냈다고 생각합니다. 얼마를 받았습니까? 첫 번째는 10c이고 두 번째는 동전 당 @50c이고, 6백만 개가 출시되었습니다. 맞습니까?
 
 **samuelvihollandia**
-Are you planning to enter a different exchange market soon?
+곧 다른 거래소에 상장할 생각이 있습니까?
 
 **arc-over-water**
-Have you personally been in Sky from the start? What members have? Who allocates the ICO money etc... I hope you understand that decentralization with investment is a two edged sword, we invest in people but we cannot know these people.... So... we question.. (edited)
+당신은 스카이코인이 시작할 때 개인적으로 보유하고 있는 것이 있습니까? 회원은 무엇을 가지고 있습니까?
+누가 ICO 자금 등을 분배하나요... 나는 당신이 투자의 분권화가 양날의 검인 것을 이해하기를 바랍니다. 
+우리는 사람들에게 투자하지만 이 사람들이 누구인지 알 수가 없습니다 .... 그래서 ... 우리는 질문합니다..(편집됨)
 
 **thrice.pi**
-with all these outside parties that helped to build skycoin and bring it where it is today who are the main core team who will help to keep all these cool features running. Will these outside parties be recruited for the long haul?
+스카이코인을 구축하는데 도움을 주는 모든 외부 인원들과 함께하며, 현재 이들은 주요 핵심 팀과 함께하며 멋진 기능들을 계속 진행하는데 큰 도움을 
+주고 있습니다. 이러한 외부 인원을 장기간에 걸쳐 모집할 것입니까?
 
 **synth**
 
-> Who is the entity that is funding this? I think you have done 2 ICOs? How much did you receive? The first was 10c and the second was @ 50c per coin, released 6 million, is that correct?
+> 자금을 지원하는 단체는 누구입니까? 나는 당신이 2개의 ICO를 끝냈다고 생각합니다. 얼마를 받았습니까? 첫 번째는 10c이고 두 번째는 동전 당 @50c
+이고, 6백만 개가 출시되었습니다. 맞습니까?
 
-The people who funded the project for the first four years, were early bitcoin and deep crypto people; who were unhappy with the fact that Bitcoin and the other alts did not seem concerned about the core issues at all. They gave us over 1200 bitcoin I think, over several years and did not ask for anything in return.
-The early Skycoin devs were doing academic research, architecture and new algorithms. Prototyping and simulation. The later stage people were more project managers and doing implementation.
-We did four ICOs for small amounts, to fund development and to allow developers working on the project to buy in. The first ICO I remember was at $0.10 per coin and the price now is about $4.00 per coin, so its up ~35x or 40x, but when you consider the Bitcoin price going from $100 to $3000, the increase has not been so much. lol (edited)
+처음 4년 동안 이 프로젝트에 자금을 지원한 사람들은 초창기 비트 코인(bitcoin)과 딥 크립토(deep crypto) 사람들 ; 
+비트 코인(Bitcoin)과 다른 알트(alts)가 핵심 이슈에 전혀 관심을 보이지 않는다는 사실에 불만을 가진 사람들 이었습니다.
+제가 알기로, 그들은 몇 년에 걸쳐 1200 비트코인 이상을 우리에게 제공하였고, 그 댓가로 아무것도 요구하지 않았습니다.
+초기 스카이코인 개발자는 학술 연구, 아키텍처 및 새로운 알고리즘을 수행하고 있었습니다. 프로토 타이핑 및 시뮬레이션 등. 
+이후 단계의 사람들은 더 많은 프로젝트 관리와 구현을 수행했습니다.
+우리는 적은 금액으로 4개의 ICO를 수행했고, 프로젝트 개발에 참여한 개발자가 구매할 수 있도록 했습니다.
+기억하는 첫 번째 ICO는 코인 당 0.10 달러였습니다. 가격은 이제 코인 당 약 $ 4.00이므로 최대 35배 ~ 40배입니다.
+그러나 비트코인 가격이 $100에서 $3000으로 상승한 것을 고려할 때, 그 상승폭은 그리 크지 않습니다. lol (편집됨)
 
 **arc-over-water**
-With the price up 35x in about 1 year, is it not now time to cool the run up and release another ICO? At what amount of coins released and what procedure?
+그 가격이 약 1년 만에 35배가 되었는데, 이제 가격을 동결시키고 다른 ICO를 출시할 때가 아닐까요? 얼마만큼의 코인을 출시하고 어떤 절차를 밟습니까?
 
 **mike**
-Would Intel Edison or Joule, or Samsung Artik 10 work well as a Skywire wireless node? They have 2 Gb-8 Gb RAM, 8-64 Gg eMMC storage, 802.11n wireless, bluetooth, and some with Zigbee?
+인텔 Edison이나 Joule, 또는 삼성 Artik 10이 스카이와이어 무선 노드로 잘 작동할까요? 그것들은 2Gb-8Gb RAM, 8-64Gg eMMC 저장 장치, 
+802.11n 무선, 블루투스 및 일부 Zigbee가 있습니까?
 
 **synth**
 
->Have you personally been in Sky from the start? What members have? Who allocates the ICO money etc... I hope you understand that decentralization with investment is a two edged sword, we invest in people but we cannot know these people.... So... we question.
+>당신은 스카이코인이 시작할 때 개인적으로 보유하고 있는 것이 있습니까? 회원은 무엇을 가지고 있습니까?
+누가 ICO 자금 등을 분배하나요... 나는 당신이 투자의 분권화가 양날의 검인 것을 이해하기를 바랍니다. 
+우리는 사람들에게 투자하지만 이 사람들이 누구인지 알 수가 없습니다 .... 그래서 ... 우리는 질문합니다..(편집됨)
 
-I think there wer three different groups that merged together in first three years, that had similar objectives. Because the code was in different language. There was python, C code and then eventually golang and the golang code became the basis for the current codebase.
-The way the coin allocations work, is that it requires unamimious consent for releasing coins and it has to be for a specific, ear marked purpose and can be blocked by any of the devs.
-Then there is a pool of coins in bitcoin for various project managers to allocate. And that is an operational fund for paying developers, contractors, marketing etc. Then different people have different responsibilities.
-Then we also have corporate funding and sponsorship and some companies paying our full time devs etc, which helps a lot.
+제가 알기로는, 처음 3년 동안 지금은 합병된 세 개의 다른 그룹이 비슷한 목표를 가지고 있었다고 생각합니다. 
+코드가 다른 언어로 작성 되었기 때문입니다. 파이썬, C 코드가 있었고 결국에는 golang이 되었으며, 현재 golang 코드가 현재 코드베이스의 기초가 
+되었습니다.
+코인 할당이 작동하는 방식은 코인을 공개하는 것에 대한 익명의 동의가 필요하며, 특정한 목적이 있어야 하며, 모든 개발자가 이를 차단할 수 있습니다.
+다음으로 다양한 프로젝트 관리자에게 할당하기 위한 비트코인들이 있습니다. 그리고 그것은 개발자, 계약자, 마케팅 등을 위한 운영 자금입니다. 
+그리고 다른 사람들은 각자 다른 책임들이 있습니다.
+다음으로 우리는 또한 자금지원 및 후원을 받는 회사가 있으며, 일부 회사는 풀 타임 개발자에게 임금을 지불하는 등 많은 도움을 줍니다.
 
 **arc-over-water**
-Silicon Valley (TV SHOW) recently had their decentralized web running on a network or refrigerators? So i would guess, smart phones, smart gadgets? Home gadgets etc could add services and receive rewards from Sky?
+실리콘 밸리(TV 쇼)는 최근 네트워크나 냉장고에서 그들의 분산 웹을 운영하고 있습니까? 그래서 제가 생각하기로는, 스마트폰, 스마트 기기?
+가정용 기기 등이 서비스를 추가하고 Sky로부터 보상을 받을 수 있습니까?
 
 **mike**
-best would be a totally open source and publicly audited manufactured system on a chip for the nodes to prevent any backdoors. Even chip designers now don't really know what they're putting into the chips since they just drag and drop black boxes known as IP cores into the ASIC designs.
+가장 좋은 방법은 노드의 백도어를 막기 위해 완전한 오픈소스와 공개적으로 감사된 제작시스템이 칩으로 제작되는 것입니다. 
+이제는 칩 설계자들도 ASIC 디자인에 IP 코어로 알려진 블랙 박스를 드래그 앤 드롭하기 때문에 칩에 무엇을 넣고 있는지 알지 못합니다.
 
 **synth**
 
->With the price up 35x in about 1 year, is it not now time to cool the run up and release another ICO? At what amount of coins released and what procedure?
+>그 가격이 약 1년 만에 35배가 되었는데, 이제 가격을 동결시키고 다른 ICO를 출시할 때가 아닐까요? 얼마만큼의 코인을 출시하고 어떤 절차를 밟습니까?
 
-I think the Skycoin price has been doubling every 40 days, for as long as I can remember. However, it will still be years before it is in the top 20, its still a long way to climb. It took bitcoin years to go from 0 to $1, even though it was growing at 1% per day the whole time for six years.
+제가 알기로는, Skycoin 가격이 40일마다 두 배가 되고 있습니다. 그러나 여전히 상위 20위 안에 들기까지 몇 년이 걸릴 것입니다. 
+6년 동안 하루 1% 씩 성장 했음에도 불구하고 비트코인이 0에서 1 달러로 떨어지는 것을 보았습니다.
 
-> best would be a totally open source and publicly audited manufactured system on a chip for the nodes to prevent any backdoors.
+> 가장 좋은 방법은 노드의 백도어를 막기 위해 완전한 오픈소스와 공개적으로 감사된 제작시스템이 칩으로 제작되는 것입니다. 
 
-we are going to use arm
+우리는 arm을 사용하려고 합니다.
 
 **arc-over-water**
-IOTA is also working on their own hardware for nodes etc, Trinary asset is JINN
+IOTA는 노드를 위해 자체 하드웨어를 제작하고 있습니다. 3대 자산은 JINN입니다.
 
 **synth**
-all intel and AMD systems have remote management engine backdoors. So they are not safe for storing large amounts of coins.
-We also have alpine linux and special version of linux, that is 6 MB and has everything that is needed for running our toolchain. It will not have any binary blobs in the kernel or anything that we cant compile from source. It does not have systemd and does not have gli, but uses musl. And does not have openssl.
+모든 intel 및 AMD 시스템에는 원격 관리 엔진 백도어가 있습니다. 그래서 그들은 많은 양의 코인을 보관하는데 안전하지 않습니다. 
+우리는 알파인 리눅스와 6MB 사양에 우리의 툴 체인에서 구동하기 위한 사양을 갖춘 리눅스 특별버전을 가지고 있습니다. 
+커널에 바이너리 blob들이 없거나 소스에서 컴파일 할 수 없는 것이 있습니다. 
+systemd가없고 gli가 없지만 musl을 사용합니다. 그리고 openssl을 가지고 있지 않습니다.
 
 **mike**
-so looks like the Samsung Artik 5 and 10 can run it no problem, they're ARM based. 25x35x4mm package for the Artik 10, Artik 5 is smaller, less powerful but has 2 separate antenna ports, nice for mesh networking with an omni and a directional antenna.
+그리고 Samsung Artik 5와 10 같은 기기에서 아무런 문제없이 실행할 수 있습니다. 그것들은 ARM 기반입니다. 
+Artik 10을 위한 25x35x4mm 패키지인 Artik 5는 작고 강력하지만, 2 개의 별도 안테나 포트가 있어 옴니 안테나와 지향성 안테나가 있는 메시 
+네트워킹에 좋습니다.
 
 **earlyarkinvestor**
-how does Ark compare to Lisk?
+Ark는 Lisk와 비교했을 때 어떻습니까?
 
 **synth**
-uploaded this image: 1923810435.jpg Add Comment
+업로드 이미지: 1923810435.jpg 설명 추가
 
 **earlyarkinvestor**
-isn't Lisk trying to achieve interoperability between blockchains as well
+Lisk는 블록체인 간의 상호 운용성을 달성하려고 시도하지 않습니다.
 
 **synth**
-uploaded this image: 1433594905.jpg Add Comment
+업로드 이미지: 1433594905.jpg 설명 추가
 
 **synth**
-uploaded this image: 1432540863.jpg Add Comment
+업로드 이미지: 1432540863.jpg 설명 추가
 
 **synth**
-uploaded this image: 2049465686.jpg Add Comment
+업로드 이미지: 2049465686.jpg 설명 추가
 
 **mike**
-nice! looks like an ARM based server rack
-let me know if you need any help with it, see you're on solidworks, which I run as well.
+멋지군요! ARM 기반 서버 랙 같군요.
+도움이 필요하면 알려주세요. 당신의 solidwork을 확인하겠습니다. 나는 그것을 아주 잘 합니다.
 
 **synth**
-this is the skycoin cluster; it has 8 CPU boards; 4 cores per CPU, 2 GB of ram per CPU and 64 bit ARM processor. Only one program will run on each individual board, so there is compartmentalization and a physical gap so that compromising one process on a system does no allow all other processes on the system to be compromised
+이것은 스카이코인 클러스터입니다.; 8개의 CPU 보드가 있으며 ; CPU 당 4 코어, CPU 당 2GB RAM 및 64비트 ARM 프로세서가 있습니다.
+단지 하나의 프로그램만 각 개별 보드에서 실행되므로, 따라서 시스템 상 손상된 1개 프로세스가 시스템 상에 구성된 모든 프로세스에 접근하여 영향을
+줄 수 없도록 구획화와 물리적 갭이 있는 것입니다.
 
 **mike**
-looks like 2 ethernet ports per board.
+보드 당 2 개의 이더넷 포트가 있는 것처럼 보입니다.
 
 **synth**
-and the hardware does not have the qualcom backdoors and is actually chinese equipment; and the backdoors are normally at the kernel level because they are not at hardware backdoors yet
+그리고 하드웨어는 퀄컴 백도어를 가지고 있지 않으며 그것은 실제로 중국 장비입니다.; 그리고 백도어는 일반적으로 커널 수준이며 그들은 아직 하드웨어
+수준 백도어를 구현할 수 없기 때문입니다. lol
+
+**mike**
+그것은 SATA 포트가 있습니까, M.2 스토리지 입니까?
+
+**synth**
+그리고 우리는 결국 ARM 개방형 라우터를 갖게 될 것입니다. 이 모델은 SATA가 없지만; SATA가 있는 모델이 있습니다.; 
+당신은 16개의 2TB 드라이브를 연결하고, lol 그리고 piratebay를 당신의 클러스터에 다운로드 합니다.(편집됨)
+스카이코인 인프라구성은 클러스터 기반이며 300대 이상의 컴퓨터에서 실행되도록 설계되었고, 컴퓨터 당 하나의 "노드"가 배치됩니다. 
+CXO 스토리지 노드 또는 스카이와이어 SDN/메쉬넷 노드 또는 VPN 엔드 포인트 노드 또는 합의 네트워크 또는 스카이코인 노드 등을 사용합니다. 
+우리는 다양한 노드/응용 프로그램 유형이 있습니다. 그래서 이것은 "개인 클라우드"그 자체로 StoreJ와는 다른 것입니다.; 
+당신은 ~ 5 클러스터 및 300 대의 컴퓨터를 사용할 수 있으며, 당신의 파일을, 당신의 인터넷에, 당신의 하드웨어에 저장할 수 있습니다. 
+당신은 당신의 자체 네트워크 외부로 이동할 필요가 없습니다.
+
+**mike**
+모든 케이블이 없는 SSD 어레이를 실행하기 위한 M.2 소켓 배열을 가진 보드를 가지고 회로 보드에서 버스를 차폐하는 것이 좋을 것 이라는 생각이 드네요.
+
+**synth**
+네, 결국 m.2가 될 것입니다. 실제로 저장용 microSSD를 사용할 것입니다. 48MB/s와 함께요.
+
+**mike**
+수량에 따른 ARM 보드 가격 책정에 대한 아이디어가 있습니까? 우리는 Bitseed V3용 인텔을 보고 있지만, ARM이 있으면 좋을 것입니다. 특히 SATA가 있는 보드를 사용하는 것이 좋습니다.
+
+**arc-over-water**
+다음에 출시될 수있는 유용한 기능에 대한 일반적인 아이디어가 있습니까? 첫번째 발표는 코인과 지갑이었고, 다음 ICO와 일반적인 향후 일정이 있습니까?
+
+**synth**
+보드는 각각 30 달러이고 솔리드 스테이트를 위한 메모리는 실제로 CPU/RAM/보드 비용보다 훨씬 높습니다. 이것은 일종의 모험입니다.
+
+**mike**
+그리고 당신은 microSSD를 가지고 있는데, 최대크기는 얼마입니까? 우리는 지금 즉시 1개의 Tb 하드 드라이브와 함께 배송할 것입니다.
+
+**synth**
+Bitseed 마이크가 이것을 도와줄 것입니다.; 그래서 우리는 보드를 풀링하고 커스텀 PCB를 할 수 있습니다.
+
+**mike**
+네, 우리는 RAM과 eMMC에서 가격상승을 생각하고 있습니다. 그리고 저렴한 SATA 보드를 찾기가 어렵습니다.
+
+**synth**
+orange pi를 사용해보십시오. 가격은 SATA의 경우 30% 상승합니다.
+
+**mike**
+네, 아주 좋은 사양입니다.
+
+**synth**
+사실은, 우리는 커스텀 PCB를 제작할 것이며 그리고 그것은 플러그 가능한 블레이드 서버라고 생각합니다.
+
+**mike**
+마이크 저는 드론 라우터, cubesat/picosat 사용을 위한 소형 폼 팩터로 삼성 Artiks를 좋아합니다. 
+그러나 그 사실은 당신이 당신의 보드의 공급체인의 깊은 곳에서 통제한다는 것이죠.
+
+**synth**
+우리는 단지 램, CPU, microSD 슬롯만 필요로 합니다.; 그리고 그것이 바로 이것입니다. 그래서 wifi와 모든 다른 것들은 단지 쓰레기입니다.
+우리는 통신, 저장 및 계산만 할 수 있습니다. 그래서 최소화로 가야 합니다.
+
+**mike**
+네, 우리는 pcduino nano 포트를 거의 사용하지 않으며, 비디오,오디오,IR는 필요하지 않습니다.
+
+**synth**
+그것은 오픈 소스 FPGA 툴체인과 서브트랙과 JNZ(jump if not zero)기능을 가진 1개의 명령 컴퓨터로 구성되어 있습니다.; 그리고
+당신이 램과 바이트 배열이 있그것을 컴파일할 수 도 있습니다.; 그것은 트롤링이지만, 트랜젝션 서명과 다른 것을 위하서, 당신이 운영할 수 있는
+수준에서 운영할 수 있습니다.
+
+**mike**
+FPGA에 대한 링크가 있습니까? 내가 가장 좋아하는 제품은 ZYNQ 7000 시리즈이지만, 이것의 가격은 훨씬 저렴합니다.
+
+**synth**
+저는 FPGA에 대해서 물어봐야 합니다.
+
+**mike**
+Blue Canyon은 큐브 위성 버스를 위해 ZYNQ 7000을 사용합니다.
+
+**synth**
+그것은 상하이에 있는 연구 회사입니다.
+
+**thrice.pi**
+나는 당신과 마이크의 대화가 혼란스러워지는 것을 원치 않습니다. 마이크는 2가지 질문을 했는데 그것에 대해 계속 진행해주세요.
+그러나 나는 아직 마이크가 이전에 한 간단한 질문에 대한 답을 보지 못했습니다. 그는 스카이코인 노드를 돌리기 위해 필요한 사양이 무엇인지에 
+대해 질문했었습니다.
+
+**synth**
+큐브 위성 발사를 위한 비용은 얼마입니까? 300만에 200?
+
+**mike**
+FPGA과 아날로그 및 GIO, PWM이 내장된 듀얼 코어 ARM이 있습니다.
+
+**synth**
+
+> 그는 스카이코인 노드를 돌리기 위해 필요한 사양이 무엇인지에 대해 질문했었습니다.
+
+이상적으로, 우리는 1GB의 램 보드가 장착된 2Ghz arm 보드 수준으로 유지하려고 합니다. 
+
+**mike**
+1기 위성 당 마이크 50K 비용이지만, 비용이 많이 내려가고 있습니다.
+
+**synth**
+스카이코인은 매우 경량화 되어 있습니다.; 비트코인이나 이더리움보다 자원 사용량이 훨씬 적습니다.; 대역폭 사용량은 10KB/s * 10KB/s 미만입니다.
+
+**thrice.pi**
+감사합니다...네, 전혀 그렇게 들리지는 않지만요.. 답변을 주셔서 감사합니다. @synth 어쩌면 제가 이 답변을 놓쳤을 수도 있지만요. 
+다음 ico가 열리는 시기는 언제입니까?
+
+**mike**
+그리고 현재의 Bitseed V2에서 아무런 문제없이 실행할 수 있습니다. 1Gb RAM, 1G 이더넷 및 SATA, 4Gb eMMC가 탑재된 듀얼 코어 Arm입니다.
+
+**synth**
+다음 ICO는 단지 홍보용이지만, 제 생각에는 7월 20일입니다. 그리고 그것은 가장 큰 거래소 상장 작업과 마케팅 및 PR  등을 실행하기 전에 시행됩니다.
+듀얼코어 arm은 비트코인와 이더리움을 실행할 수 있습니다.; 이것은 매우 놀라운 일입니다.; 이더리움은은 CPU hog여야합니다.
+
+**thrice.pi**
+얼마나 오랫동안 열립니까?
+
+**michaelthecryptoguy**
+역시 techbytes는 좋은 질문을 해 주었습니다. >>>>> 스카이와이어 노드나 다른 코인의 마스터 노드 같은 합의 노드를 실행하려면 스카이코인을 사용해야 합니까?
+
+**synth**
+
+> 스카이와이어 노드나 다른 코인의 마스터 노드 같은 합의 노드를 실행하려면 스카이코인을 사용해야 합니까?
+
+아니오, 우리는 몇 종류의 프리미엄을 가지고 싶습니다. 만약 당신이 코인을 지불하지 않으면, 노드는 무료사용 계층에 대해 대역폭의 20%를 할당할 
+것입니다. 그러나 지불하는 경우 지연이 없으므로 서비스와 속도는 훨신 좋아집니다. 하지만 만약 사람들이 지갑에 코인이 없다고 하더라도, 
+우리는 사람들이 서비스나 네트워크에 접근할 수 없도록 하는 것을 원하지 않습니다. 그러나 우리는 프리미엄 계층을 위해 자원사용률의 제한치를 
+설정하는 것이 필요하며, 그로 인해서 제어가 불가능하거나 네트워크 정체를 일으키지 않을 것입니다.
+
+**michaelthecryptoguy**
+:훌륭합니다.:
+
+**thrice.pi**
+@synth는 홍보 목적의 7월 ico에 대해 언급했는데 ... 이것은 Mike가 "스카이코인은 원래 계획대로 메쉬 노드를 설정하고 등록하는 노드 보조 계획이 
+있습니까?"라는 질문에 관한 것 같습니다.(편집됨)
+
+**synth**
+네트워크 상의 사람들을 모으는 것은 쉽습니다.; 아무 것도 하지 않고 말입니다.; 그 다음 그들은 나머지 사항과 최적화 방법에 대해 파악하고
+32노드 클러스터를 설정 및 코인 로드, Linux를 학습하여 CLI를 사용하고 10Gbps 업링크 및 해당 이웃 라우터 및 그들의 지붕 위에 있는 Wi-Fi 노드로 
+연결되는 물리적 케이블이 있는 채굴자가 됩니다. lol
+
+**thrice.pi**
 lol
 
 **mike**
-do they have SATA ports, maybe M.2 for storage?
+그리고 Orange Pi PC를 사용하는 것 같네요. 커넥터 포트 중 하나는 USB, 다른 이더넷입니다. 
+http://www.orangepi.org/orangepipc/ . 이것들은 멋진 카드입니다. orangepi.org orange pi pc - Orangepi
 
 **synth**
-and we will hav an ARM openwrt router eventually too
-this model does not have SATA, but we have a model with SATA; you could hook up 16 2 TB drives, lol and download half the piratebay to your cluster (edited)
-the skycoin infrastructure is cluster based and designed for running across +300 computers, with one "node" deployed per computer. Eithe a CXO storage node, or a skywire SDN/meshnet node, or a VPN end point node or a consensus network, or skycoin node, etc. We have multiple node/application types.
-so this is a "personal cloud' by itself
-its not like StoreJ where you have other people storing your stuff; you are going to have ~5 clusters and 300 computers and can store your own files, on your own internet, on your own hardware. You do not need to go outside of your own network.
+결국, 만약 당신이 40 Ghz 및 지향성 안테나, 위성, 드론이 있다면 또는 도시 간의 장거리 통신 또는 트래픽 릴레이를 할 수 있습니다.
+나는 우리가 이 일을 할 수 있다면 "채굴자들"과 하드웨어의 혁신을 이룰 것이라고 생각합니다. 우리는 유기 반도체 잉크로 위상 배열 및 프랙탈 안테나를 인쇄하는 박사 논문을 쓴 사람이 있습니다. 그는 이미 회사에 스카이코인 "채굴용" 하드웨어 안테나를 설치하기를 원합니다. 
+그러나 이 혁신을 시작하려면 소프트웨어에 많은 작업이 필요합니다.
 
 **mike**
-Have thought it'd be nice to have a board with an array of M.2 sockets to run SSD arrays without all the cables, have the busses shielded in circuit board.
+네, 그게 바로 우리가 Bitseed에서 기다렸던 것입니다. BTC 풀 노드를 평균 시간에 했습니다.
+
+**thrice.pi**
+스카이코인은 엄청난 코인이라고 생각합니다.. 그러나 일반적인 사용자가 자유롭게 사용하는 것이 어려울 수도 있습니다. 
+ark와 같은 무언가가 스카이 코인의 관문으로 사용될 가능성이 있다고 생각하십니까? 그리고 일반적인 사용자가 ark 네트워크처럼 사용하기 쉬운 네트워크를 이용하여 스카이 코인처럼 광범위하고 복잡하며 혁신적인 서비스에 연결할 수 있습니까? @synth (편집됨)
 
 **synth**
-yes, i think there will be m.2 eventually
-these actually use a microSSD for storage, and its 48MB/s
+나는 완성파일을 제공할 것이며, 따라서 당신은 대량 제작을 시작할 수 있습니다. 우리는 공장이 없으며 한 번에 30대를 조립하는 것이 어렵습니다.
+
+**thrice.pi**
+만약 이 문제가 해결되었면 죄송합니다.. 저는 눈 깜짝할 새에 이 엄청난 질문들을 놓쳐버렸네요.(편집됨)
 
 **mike**
-any idea on the pricing on your ARM boards in quantity? We are looking at Intel for Bitseed V3, but ARM would be good to stay with, especially using your boards if there is SATA.
+안테나는 그래핀 잉크로 인쇄 할 수 있으며, 정상적인 경우 큐브셋 호환 폼 팩터에서 200dB 이상의 이득을 얻을 수 있습니다.
+
+**michaelthecryptoguy**
+이것은 정말 도움이 될 것입니다. : 댄싱 : 제 3 세계 국가의 사람들은 ; 태양이 됩니다.: (스스로:이것:보유) 금융 서비스 및 통신 회사 : 진부함:: 좋은직업 :: 새로움: 이제 우리는 그들에게 스마트폰을 보급하는 길을 찾아야 할 것입니다. : partysaurus :: tophat : (편집됨)
+
+**mike**
+그렇게 하는것이 아주 좋을 것입니다. 조립 소요 시간이 훨씬 짧으면서 비용이 적게 드는 포장을 생각해봐야 겠습니다.
+makerbeam을 이용하는 것이 좋아보입니다.
+스토리지가있는 고정 노드와 메쉬 네트워킹 기능을 갖춘 오픈소스 모듈식 모바일을 통해 안전하고 암호화된 네트워킹으로 세계적인 보급률을 달성 할 
+수 있습니다.
+
+**synth**
+네, 고정노드, 이동 노드는 많은 문제를 야기합니다. 스카이 와이어는 사람들이 이동하는 공간에서 "모바일 애드 호크 네트워킹"이 아닌 지점 간 
+세그먼트를 통해 실행되도록 설계 되었습니다.
 
 **arc-over-water**
-Do you have a general idea of usable functions to be released next in what order? The first release was the Coin and wallet, then the ICOs and can you give a general future with dates if you can
-
-**synth**
-the boards are $30 each and the memory for solid state, is actually more than the the cost of the CPU/RAM/board now. Which is sort of insane.
+출시된 기본 프로그램 제품이 있습니까? 현재 단순 지갑에 불과한가요?
 
 **mike**
-so you have microSSD, what's maximum size? we shipping 1with Tb hard drives right now
+그래서 라우팅 테이블이 자주 업데이트 되지 않습니까?
 
 **synth**
-Bitseed mike is going to help with this; so we can pool the boards and do a custom PCB
+https://github.com/skycoin 에  다양한 애플리케이션이 있습니다.
+https://github.com/skycoin/bbs 작업이 현재 진행중입니다.
+이제는 라우팅 테이블이 새로운 연결에서만 변경됩니다. 그래서 당신은 공개키에 ~ 10 개의 연결을 만들고 어떤 경우에는 일부를 소멸하고 새로운 연결을 
+생성합니다. 그리고 경로와 전송 방법에는 중복이 있습니다. "다중 라우팅"은 노드 간의 직접 연결이 10 초 이상 걸리는 빈도를 줄입니다.
+최적화되어있으니 변경하지 마십시오. 기본 물리적 연결에 대한 변경, 업데이트 충돌 발생 및 네트워크 토폴로지 변경(최소화해야 함)에 대해서.
+연결 해제 또는 라우트가 있거나 연결이 설정된 경우 네트워크 토폴로지가 변경되지 않고 대역폭에 관리 오버 헤드가 없습니다.
+단거리, 모바일 애드혹 라우팅은 BATMAN과 같은 다른 프로토콜에 의해 처리되어야 하며 WIFI 핫스팟과 같은 고정 인프라, 도시 간 광통신, 이더넷 케이블 등은 스카이와이어 항목에 의해 처리됩니다.;그래서 만약 당신이 커피 숍에 들어가서 30 분간 연결하면 괜찮습니다.; 하지만 5 초마다 다른 핫스팟에 
+연결되는 거리를 운전하는 경우에는 이를 위해 설계되지 않았기 때문에 "모바일"을 위한 또 다른 프로토콜 계층이 필요합니다.
 
 **mike**
-yes, that's where we see the price jumps, is in RAM and eMMC costs.
-and it's hard to find low cost boards with SATA
-
-**synth**
-try the orange pi
-the price goes up 30% for SATA
+그래서 노드는 움직일 수 있습니다. 만약 송신이 중단되지 않는 경우, 빔이 통신을 방해하지 않도록 충분히 빠르게 움직일 수 있는 한 안테나의 빔을 생성할 수 있습니다.
 
 **mike**
-yes, very nice specs.
+그래서 노드는 움직일 수 있습니다. 만약 송신이 중단되지 않는 경우, 빔이 통신을 방해하지 않도록 충분히 빠르게 움직일 수 있는 한 안테나의 빔을 생성할 수 있습니다.
+업데이트를 참조하십시오. 그들은 일부 중단현상이 발생해도 문제가 없다고 합니다.
+미니 셀 타워 및 액세스 포인트와 같은 기능을 하는데는 문제가 없지만 휴대용 모바일 구축은 다른 프로토콜입니다. 만약 셀에서 셀로 이동하는 경우에는 말입니다.
 
 **synth**
-eventually, we will make one that has custom PCB and is a pluggable blade server, I think.
+네, 단계적 배열은 괜찮을 것입니다.; 또는 신호가 두 번째로 중단되었거나 신호가 매시간 끊어지고 다시 돌아오더라도 네트워크 토폴로지의 근본적인 
+변화가 더 성가신 문제입니다. 전체 네트워크에서 라우팅에 관여하는 모든 사람들에게 통보해야 하기 때문입니다.
+따라서 CXO를 통해; P2P(peer to peer) 업데이트를 실제로 수행해야합니다. 
+결국 네트워크는 각 노드가 현재 인터넷에서 정상적인 방식으로 분할된 하나 이상의 라우팅/가입 도메인에 속하도록 세그먼트화 되어야 합니다. 
+두 사람 간의 최근 중단 홉 수는 ~40 또는 80이어야 하며 또는 예측할 수 없는 숫자일 수 있습니다.;
+스카이코인에서 그것은 4 또는 최대 7이 될 것입니다. 집에서 주변 이웃, 도시, 도시/국가 그리고 다른 목적지까지 말입니다.
+그것은 40 개의 물리적인 홉 (hop)으로 나타나지는 않을 것이며, 그것은 각각 개별적인 혼잡을 가질 수 있습니다.
+위상배열의 이점은 다음과 같은데, 당신은 지금 당장 당신의 지붕으로 신호를 던져 당신이 연결하고자 하는 사람을 검색할 수 있습니다.;
+그 다음 지붕에 올라가거나 다른 작업을 할 필요 없이 다른 사람 또는 좋아하는 사람과 연결할 수 있습니다.;빔 신호는 소프트웨어로 조작합니다.
+나는 BBS와 VPN을 좋아하는데, 우리가 그것을 구동하기 위해서 새로운 물리적인 인터넷을 구축할 필요가 없기 때문입니다.;
+우리는 단지 기존의 인터넷을 터널링하고, 그것은 유용합니다. 기존 인터넷의 하드웨어 대안이 개발되기 위해서는 수 년이 걸릴 것입니다. 
+사람들이 한 달에 100,000 개의 노드를 설치하고 하루에 1% 씩 성장하고 있어도 기존 인터넷을 대체 할 수 있을 때까지 10 ~ 15 년이 걸릴 것입니다.
+많은 장비가 있고 성장률이 엄청나더라도, 많은 시간이 걸릴 것입니다.
 
 **mike**
-I like the Samsung Artiks for the tiny form factor for drone routers, cubesat/picosat possibilities.
-but like the fact that you are controlling much deeper down the supply chain with your boards.
-
-**synth**
-we only need ram, CPU, then microSD slot; and that is it. so the wifi and all this other stuff is just crap and its junk. We only have communication, storage and computation. So should be minimialist.
-
-**mike**
-yes, we use very few of the ports on the pcduino nano, no need for video, audio, IR
-
-**synth**
-there is even open source FPGA toolchain and a one instruction computer with subtract and jump if not zero; and if you have ram and a byte array, could even compile down to that; which is trolling, but for signing transactions or something, you could operate at that level.
-
-**mike**
-do you have a link for the FPGA. My favorite has been the ZYNQ 7000 series, but this sounds a lot lower cost.
-
-**synth**
-I have to ask about the FPGA
-
-**mike**
-Blue Canyon uses ZYNQ 7000 for their Cubesat bus.
-
-**synth**
-it is education company in shanghai
-
-**thrice.pi**
-i dont want to disrupt this communication u and mike have going on cuz its good to see you two discussing these things so please do continue..but i just a simple question that mike actually asked earlier which i didnt see a reply to..he asked what type of spes is needed to run a node for skycoin
-
-**synth**
-how much is it for cube sats for launch? 200 for 3 million?
-
-**mike**
-it has dual core ARM with an attached FPGA and both analog and GIO, PWM
-
-**synth**
-
-> he asked what type of spes is needed to run a node for skycoin
-
-We are trying to keep to level where 2 Ghz arm board with 1 GB of ram can run it. ideally
-
-**mike**
-50K per 1U satellite was the going rate, but that is coming down a lot.
-
-**synth**
-skycoin is very minimalist; it much lower on resource usage than either bitcoin or ethereum; the bandwidth usage is less than 10 Kb/s
-*10 KB/s
-
-**thrice.pi**
-thank u..yes it doesn't sound like much at all..thank you for your reply @synth
-maybe i missed this answer but when is the next ico taking place
-
-**mike**
-so current Bitseed V2 can run it no problem. is dual core Arm with 1 Gb RAM, 1G ethernet and SATA, 4 Gb eMMC on board.
-
-**synth**
-the next ICO is just marketing event, but is july 20th I think
-and it is just run up before largest exchange listings and marketing and PR push etc
-oh, the dual core arm can run bitcoin and ethereum; that is amazing; ethereum should be CPU hog
-
-**thrice.pi**
-how long is it on for ?
-
-**michaelthecryptoguy**
-also techbytes had a good question >>>>>Do we need to hold skycoin to run Skywire nodes or consensus nodes like masternodes from other coins?
-
-**synth**
-
-> Do we need to hold skycoin to run Skywire nodes or consensus nodes like masternodes from other coins?
-
-No. We want to have some kind of freemum thing. If you are not paying coins, the nodes will allocate 20% of bandwidth for the free tier
-But you wont have congestion if you are paying, so much better service and speed, but we dont want people not being able to access a service or the network if they have no coins in the wallet
-but we need to cap the resource usage of the freemium tier, so that it does not get out of control or clog the network
-
-**michaelthecryptoguy**
-:excellent:
-
-**thrice.pi**
-@synth the ico in july for marketing purposes that u mentioned ...is that pertaining to what mike asked about when he asked "Will Skycoin still have the node subsidy plan for setting up and registering the mesh nodes like originally planned?" (edited)
-
-**synth**
-it is easier to get people on network, without having to do anything; then they wil figure out the rest later and how to optimize it and setup a 32 node cluster and load coins in and learn linux and use a CLI and becoming a mining baron with a 10 Gbps uplink and physical cables to their neighbors and wifi nodes on their roof etc, lol
-
-**thrice.pi**
-lol
-
-**mike**
-so looks like you're using the Orange Pi PC, one of the connector ports is the USB, the other ethernet. http://www.orangepi.org/orangepipc/ . These are nice cards. orangepi.org orange pi pc - Orangepi
-
-**synth**
-eventually, if you have 40 Ghz and directional antennas, satilites or drones make sense for long haul or relaying traffic between cities. I think if we can get this working, the "miners" and hardware innovation will be insane.
-We have guy who did PHD thesis on printing phased array and fractal antennas with organic semiconductor ink and he already wants to start companies to do antennas for skycoin "mining" hardware; but the software still needs a lot of work before they can start this insanity.
-
-**mike**
-yes, that's what we were waiting for with Bitseed, been doing BTC fullnodes in mean time.
-
-**thrice.pi**
-it seems skycoin is one hell of a coin..but it may be difficult to use for the everyday user to wrap their mind around..you think there is potential for something like ark to be used as a gateway to skycoin..so the everyday user can use something easy like arks network to link to something so broad, complex and revolutionary like skycoin ? @synth (edited)
-
-**synth**
-i will give you the solid works files, so you can start manufacturing these in bulk; we do not have factory and even assembling 30 units at a time is difficult for us
-
-**thrice.pi**
-sorry if this has been addressed..i may of blinked and missed it with all these great questions (edited)
-
-**mike**
-the antennas can be printed with graphene ink, have over 200 dB gain on a cubesat compatible form factor if done right.
-
-**michaelthecryptoguy**
-This would really help :dancing: people in third world countries turn into a :sun: (self :this:owned) Financial Services and Communications Company :bananadance::goodjob: :hadouken: Now we just need to find a way to get them a smartphone :partysaurus::tophat: (edited)
-
-**mike**
-would very much like to do that, maybe come up with packaging which takes a lot less time to assemble, lower cost. though makerbeam is cool...
-that's been intent, have stationary nodes with storage, and open source modular mobile with mesh networking, which can achieve global penetration with secure, encrypted networking.
-
-**synth**
-yes, stationary, moving nodes creates a lot of problems
-skywire only works because its it designed to run over point-to-point segments and not for "mobile adhoc networking" where people are moving around
-
-**arc-over-water**
-Do you have a basic program product release? Is it correct at them moment it is just the wallet?
-
-**mike**
-so the routing tables don't update that often?
-
-**synth**
-https://github.com/skycoin has a lot of different applications
-https://github.com/skycoin/bbs works right now
-the routing tables only change on new connection; so you make ~10 connections to a pubkey and if some drop you create new ones. so there is redundancy in the path and transit method. "diversity routing"
-where as the direct connections between nodes are supposed to change less frequency, such as not more often than 10 seconds. Ideally never changing. any change to underlying physical connectivity, causes update cascade and is a change to network topology (should be minimized).
-Where as connection dropping or routes being or connection established, does not change network topology and has no administrative overhead in bandwidth.
-short range, mobile ad hoc routing needs to be handled by another protocol like BATMAN, while fixed infrastructure like WIFI hotspots, fiber between cities, ethernet cables etc is handled by the skywire stuff; so if you enter a coffee shop and connect and are there for 30 minutes, then you are fine; but if you are driving down the street connecting to different hotspot every 5 seconds, its not designed for that and needs another protocol layer for "mobile"
-
-**mike**
-so nodes can move if the transmission is not interrupted, like a beam forming antenna could do it as long as the beams can be moved fast enough to not interrupt the communication.
-
-**mike**
-so nodes can move if the transmission is not interrupted, like a beam forming antenna could do it as long as the beams can be moved fast enough to not interrupt the communication.
-see update, they are ok even if some interruption.
-makes sense though, works fine for having like mini cell tower and access points, hand held mobile is another protocol if moving from cell to cell.
-
-**synth**
-yes, phased array would be fine; or signal interrupted for second or even if signal goes out every hour for and hour and comes back on
-but fundamental changes to network topology are more annoying, because everyone involved in routing across the whole network has to get notified; so you actually have to do the updates peer to peer, over CXO; and eventually network has to be segmented so that each node belongs to one or more routing/subscription domains that are partitioned in a sane way
-in the current internet the number of hops between two people can be ~40 or 80 or just some insane number; in skycoin it will be 4 or a max of 7. etc, from house to neighborhood, to city, to city/country and then to destination. It wont appear as 40 physical hops, that can each have their own independent congestion
-the advantage of phased array, is that you just throw it on your roof and it can scan for whoever it can connect it; and then can connect to different people or best person, without having to climb up on roof and ajust anything; the beam focus is on software control
-i like the BBS and VPN, because we do not need to build a physical new internet to run them; we can just tunnel over the existing internet and its useful. It will take years before we see a hardware alternative to the existing internet. Even people are installing 100,000 nodes a month and its growing at 1% per day, it would still take 10 or 15 years until it could replace the existing internet.
-There is just so much equipment installed and even if growth rate is massive, it will take forever.
-
-**mike**
-yes, this is what i like about it, much easier for automated set-up than pointing antennas, even with motorized directional. had thought of using low frequency for nodes to transmit gps coordinates to locate each other, then point highest possible frequency for range to connect at each other.
+네, 이것은 제가 좋아할 만한 것이네요. 포인팅 안테나보다 자동 설정 안테나가 훨씬 쉬우며, 노드에 저주파를 사용하여 GPS 좌표를 전송하여 서로 위치를 결정한 다음, 가능한 가장 높은 주파수 범위를 서로 연결하는 것이 좋을 것 같습니다.
 
 **synth**
 the VPN will be big application; hardware vpn, whole house VPN; you plug it in and it VPNs your whole house and all your connections
@@ -1069,13 +1121,13 @@ Thank You for taking your time to answer everything in complete detail. It was n
 thanks @synth for taking the time for this AMA it was :mindblown: really interesting stuff
 
 **techbytes**
-marathon session today.
+오늘은 마라톤 세션이었네요.
 
 **michaelthecryptoguy**
 I sure can. As long as jarunik hasn't already started. (edited)
 
 **mike**
-Thank you very much for joining us synth, please stop by again.
-I will also be continuing to check in on skycoin slack for updates as well,
+synth와 함께 해 주셔서 대단히 감사합니다. 다음 기회에 다시 참여해주신다면 감사하겠습니다.
+저는 지속적으로 스카이코인 슬랙을 확인하여 새로운 소식을 전할 것입니다.
 [skycoin.slack.com](https://skycoin.slack.com)
-The closer the integration of Skycoin with Ark, the better.
+가까운 미래에 스카이코인이 Ark와 함께 한다면 더 좋겠습니다.
