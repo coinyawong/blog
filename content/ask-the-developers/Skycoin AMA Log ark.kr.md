@@ -724,407 +724,465 @@ https://github.com/skycoin/bbs 작업이 현재 진행중입니다.
 네, 이것은 제가 좋아할 만한 것이네요. 포인팅 안테나보다 자동 설정 안테나가 훨씬 쉬우며, 노드에 저주파를 사용하여 GPS 좌표를 전송하여 서로 위치를 결정한 다음, 가능한 가장 높은 주파수 범위를 서로 연결하는 것이 좋을 것 같습니다.
 
 **synth**
-the VPN will be big application; hardware vpn, whole house VPN; you plug it in and it VPNs your whole house and all your connections
-the ISPS are allowed to sell all the data they collect now
-and you can start hardware blocking the IP addresses for ad servers and tracking servers and so on; and different vpn end point for each device on the lan and be able to rotate them out automatically
-what will happen, is that all the torrent sites and communities will be driven underground; and when that happens, the downloads will eventually be blocked or slowed by ISPS and you will need a "new internet" to really get a lot of the content that is available to people now.
-Five years ago, there was no point in doing this. Today the motivations are emerging, that will drive people to something new
-and another thing is that reddit has been overrun with bots; controlling all the upvotes and content now. And corporations have completely taken over and subverted facebook and twitter.
-People are going to be looking for decentralized platforms and there will be a mass movement to the platforms that can solve the bot manipulation problem, the shilling problem and the company owned by corporate money whore sellout problem.
-so there were attempts at a building decentralized twitters and facebooks, but five years ago there was not a need; now people are ready to siwtch and the technology is ready.
-the skycoin project is building the base layer, then the communities are building their own projects. We are just giving them the tools.
+VPN은 거대한 어플리케이션이 될 것입니다; 하드웨어 vpn, 가정용 VPN; 당신은 그것을 연결하고 그 VPNs은 집 전체 및 모든 당신의 연결 IPS들은 현재까지 그들이 수집한 모든 데이터를 판매할 수 있도록 허용됩니다. 
+그리고 당신은 광고서버 및 추적 서버에 대한 IP 주소를 차단하는 하드웨어를 시작할 수 있습니다.; 랜 상의 각 장치에 대해 서로 다른 VPN 엔드 포인트를 
+설정하고 자동으로 해당 장치를 순환시킬 수 있습니다.
+무슨 일이 생길까요, 모든 토렌트 사이트와 커뮤니티들이 지하로 몰리게 됩니다.; 그리고 언제 이것이 일어나느냐, 다운로드는 IPS에 의해 결국 차단되거나 느려질 것이고, 당신이 사람들에게 현재 사용할 수 있는 많은 컨텐츠를 실제로 얻으려면 "새로운 인터넷"이 필요할 것입니다.
+5년 전만 해도, 이것에 대해 아무 문제가 없었습니다. 오늘날 사람들이 뭔가 새로운 것을 추구할 동기가 생겨났으며, 또 다른 측면으로 reddit은 
+봇들로 넘쳐나고 있습니다.; 봇은 현재 모든 업보드와 컨텐츠를 컨트롤하고 있습니다. 그리고 기업들은 페이스북과 트위터를 완전히 장악했습니다.
+사람들은 분산 플랫폼을 찾고 있으며, 봇 조작 문제, 투기 문제 그리고 회사 공금 횡령 문제를 해결하기 위해 소유된 회사 등의 문제를 해결하기 위한
+방법으로 분산 플랫폼으로 대규모 이동이 있을 것입니다.
+그래서 페이스북과 트위터에 분산 플랫폼 기능을 추가했지만, 5년 전에는 그것이 필요하지 않았습니다.; 이제 사람들은 이동할 준비가 되었고, 기술 또한
+준비되었습니다.
+스카이코인 프로젝트는 기본 단계에서 시작되며, 커뮤니티들은 그들의 프로젝트를 구축합니다. 우리는 단지 그들에게 도구를 제공할 뿐입니다.  
 
 **mike**
-Yes, like as an example, twitter made my sign-up email public, had no idea, was getting spammed all the sudden, finally found out why when I went to twitter to stop getting multiple copies of a privacy notice.
-Would very much like to bridge skycoin with Ark, so Ark runs on top of this VPN, and advantage is that your VPN is trustless, or at least much more decentralized than relying on a single VPN provider, which is 100% reliant on trust.
+네, 예를 들자면, 트위터가 내 가입 이메일을 공개했는지를 저는 알 수가 없지만, 갑자기 스팸을 받았으며, 결국 트위터에 가서 개인정보보호 고지사본을 
+계속해서 받지 못한 이유를 알게 되었습니다. 
+스카이코인이 Ark와 연동되기를 바라고 있으며, Ark는 이 VPN의 최상부에서 실행되며, 이것은 당신의 VPN이 신뢰가 없거나 또는 적어도 훨씬 더 분산되어 있는 것이 단일 VPN 공급자에게 의존하는 것보다는 이점일 것입니다. 이것은 100% 신뢰할 수 있는 사실입니다.
 
 **xano**
-How do you feel the incredible potential for illegal activities will affect the future of Skycoin and mass adoption?
+당신은 불법활동에 대한 상당한 잠재력이 스카이코인의 미래와 대중 유입에 어떤 영향을 미칠 것이라고 생각하십니까?
 
 **charles**
-I also don't quite understand how skycoin solves the bots on reddit
+나는 또한 스카이코인이 reddit에서 봇들을 어떻게 해결할 것인지를 이해하지 못했습니다.
 
 **xano**
-Almost everyone loves free movies, series and music, but what if ISIS starts using it for example
+거의 모든 사람들이 무료 영화, 시리즈, 음악을 좋아하지만, 만약 ISIS가 그것을 사용한다면 어떻게 될까요?
 
 **synth**
-now, on twitter; for instance hillary clinton campaign paid twitter money for "brand management" and if 300 people you follow said something negative about her, you wont see any of the tweets. And 1 person in 4000 says something positive and everyone in the that persons followers, will see the tweet in the feed!
-The companies are controlling what people see and what information is allowed into their feeds. Its not organic anymore. Its not based upon your preferences. It is based upon making the platform friendly to advertisers, who can pull their money out. They are pushing social agendas even and requiring the companies they are giving money to, to censor particular people and movements, to keep the advertising money.
-Even Google is being forced to comply with these demands. Fortune 500 pulled out 700 million/year in ad revenue and then google agreed to censor search results to please the advertisers. And then they are threatening them with fines in the EU unless they comply and serve the governments and corporations.
-Decentralized social media, means that you own your own data. It means that you control on your computer, the algorithm used to sort and prioritize your feed. Instead of allowing it to be controlled and manipulated by a third party, who is a whore for money trying avoid being fined by the EU and groveling before soap companies threatening to pull their ad money out, unless they censor things.
-yes, ARK could use skycoin network for block and transaction distribution. And could use it for networking, to avoid blocking.
-And ARK could be deployed as a node in the same framework as skycoin. in the skycoin clusters.
-There is https://github.com/skycoin/viscript and we can add ARK here. This is a cross platform CLI, and application launcher and for cluster management eventually.
+지금, 트위터에서; 예를 들면 힐러리 클린턴 캠페인이 "브랜드 관리"에 대한 트위터 머니를 지불하고, 만약 당신이 팔로우한 300명의 사람들이 그녀에 
+대한 부정적인 말을 했다면, 당신은 트위터를 보지 않을 것입니다. 그리고 4000명 중 1명이 긍정적인 말을 하고 그 사람을 팔로우한 모든 사람이 그의 피드에서 그것을 볼 것입니다!
+그 회사는 사람들이 무엇을 보고 어떤 정보가 그들의 피드에 허용될 것인지를 컨트롤 합니다. 그것은 더 이상 자연스럽지 않습니다. 
+그것은 당신의 선호도에 근거하지 않습니다. 그것은 광고주에 익숙하도록 플랫폼을 만드는데 기반을 두고 있으며 광고주는 그들의 돈을 지불합니다.
+그들은 사회적인 문제를 그들에게 돈을 주는 회사가 필요한 방향으로 밀어붙이고 있으며, 특정 인물과 행동을 검열하여 그들의 광고 수입을 유지하고 
+있습니다.
+구글(Google)조차도 이러한 요구 사항을 준수해야 합니다. 
+포츈(Fortune) 500은 광고 수입으로 연간 7억 달러를 벌어들이고 있으며, 구글(Google)은 검색결과를 검열하여 광고주를 만족시켰습니다.
+그리고 그들은 정부와 기업을 만족시키지 못한다면 EU에서 제재를 당합니다.
+분산 소셜 미디어는 당신이 당신의 데이터를 소유한다는 의미입니다. 이것은 당신이 당신의 컴퓨터를 제어한다는 것을 의미하며, 이 알고리즘은 당신의 
+피드를 정렬 또는 우선순위를 정할 때 사용될 수 있습니다.
+EU와 정부의 벌금을 피하기 위해 유령 회사를 세워 그들의 광고수입을 빼돌리는 제3자에 의해 통제 및 조작되는 대신에, 그들의 검열 없이 말입니다.
+네, ARK는 블럭과 트랜젝션 배포를 위해 스카이코인 네트워크를 사용할 수 있습니다.
+그리고 차단을 피하기 위해 네트워킹을 사용할 수 있습니다.
+그리고 ARK는 스카이코인과 동일한 프레임워크 상의 노드로써 배포될 수 있습니다. 스카이코인 클러스터 내에서 말입니다.
+이것은 https://github.com/skycoin/viscript에 있으며, 우리는 ARK를 여기에 추가할 수 있습니다. 이것은 교차 플랫폼 CLI이며, 어플리케이션 실행과 
+클러스터 관리를 위한 것입니다.
 
 **mike**
-thanks! will post to our devs. we have and are adding a lot of API's and CLIs for different languages.
+감사합니다. 이것은 우리의 개발자 포럼에 게시될 것입니다. 우리는 다양한 언어에 대한 많은 API와 CLI를 추가하고 있습니다.
 
 **synth**
 
->I also don't quite understand how skycoin solves the bots on reddit
+>나는 또한 스카이코인이 reddit에서 봇들을 어떻게 해결할 것인지를 이해하지 못했습니다.
 
-It is outside of skycoin project, but the people building the BBS has a really cool filtering algorithm. Everyone is identified by their public key and can build out a web of trust. And its like page rank for users.
-Its a decentralized type of moderation, that is automatic.
-is ARK in golang?
+이것은 스카이코인 프로젝트에 포함되지 않지만, BBS 개발자들은 정말 멋진 필터링 알고리즘을 개발했습니다. 모든 사람든 공개키로 식별되며
+신회성 있는 웹을 구축할 수 있습니다. 그리고 그것의 페이지 순위는 사용자들에 의해 결정됩니다.
+이것은 중도적인 분권화 유형이며, 자동으로 실행됩니다.
+ARK는 golang이 지원됩니까?
 
 **jarunik**
-Ark chain is in Javascript but we got a golang api.
+Ark 체인은 자바 스크립트로 구축되었지만 우리는 golang api를 가지고 있습니다.
 
 **arc-over-water**
-Why golang over rust or scala?
+왜 golang이 rust 또는 scala를 능가하나요?
 
 **mike**
-Ark core is written in node.js , may be ported to go. There is a go api/cli being written, by @chris I believe.
+Ark 코어는 node.js로 작성되었으며, 아마 변경이 가능할 것입니다. 제가 알기로는 @chris가 go api/cli에 작성했습니다. 
 
 **arc-over-water**
-when will there be a lisp coin platform :slightly_smiling_face:
+lisp 코인 플랫폼이 여기 있을 경우에 : 약간 웃는 표정:
 
 **mike**
-golang is done? nice!
+golang이 완성되었나요? 좋아요!
 
 **boldninja**
-https://github.com/ArkEcosystem/ark-go GitHub ArkEcosystem/ark-go ark-go - Ark GO client for ARK.io blockchain ecosystem #golang #ark #blockchain
+https://github.com/ArkEcosystem/ark-go GitHub ArkEcosystem/ark-go ark-go - 블록체인 생태계를 위한 Ark GO 클라이언트 #golang #ark #blockchain
 
 **mike**
-lisp - that would be fun! Continue to be amazed lisp is still around, but popular for machine learning apps. yes, we need lisp added, can you do it arc-over-water?
-lisp seems to have good function for parallel processing but don't know details myself.
+lisp - 재미있군요! lisp은 여전히 우리 주위에 존재하지만, 기계 학습앱에 인기가 있다는 것이 여전히 놀랍군요.
+네, 우리는 lisp을 추가할 필요가 있습니다. arc-over-water씨가 이것을 할 수 있나요?
+lisp는 병렬 처리를 위해 좋은 기능을 가지고 있는 것으로 보이지만, 제가 세부사항을 알지 못합니다.
 
 **arc-over-water**
-now there is Shen.. http://shenlanguage.org/
+지금 여기에 shen..http://shenlanguage.org/
 
 **synth**
 
->How do you feel the incredible potential for illegal activities will affect the future of Skycoin and mass adoption?
+>당신은 불법활동에 대한 상당한 잠재력이 스카이코인의 미래와 대중 유입에 어떤 영향을 미칠 것이라고 생각하십니까?
 
-The people selling drugs will love skycoin. Bitcoin was worthless until people could buy drugs with it, then it was money and it went from $0.01 to $1000 in a year.
-When the internet was created, the first thing people were doing was downloading porn. When bitcoin was created the first thing people were doing was buying drugs and guns.
-ISIS does not need skycoin, because they are using xbox messanger and facebook messanger. They do not need crypto. Every terrorist attack means budget increases, so the government loves ISIS. Terrorism is big money and the more terror, the more money there is to make. People are making too much money off of ISIS for them to get rid of the problem any time soon.
-Pedophiles were also the first ones to adapt stenography, i2p, tor, tails and bitmessage. They are always the first ones testing out any new crypto stuff. You should look at the logos of the stenography apps and you can guess what kind of people wrote these applications.
-Even two years, before skycoin was launched the intelligence and money laundering people were already showing up and giving lists of requirements for scrubbing or hiding metadata.
-If I was building the next silk road I would be looking at tech like skycoin is building. I think everyone has had that idea.
-We really cannot control what people are going to do with this. Its just inevitable progress and its going to happen whether we do it, or maidsafe does it or someone does it. Its going to happen. (edited)
+마약 판매를 하는 사람들이 스카이코인을 좋아할 것입니다. 비트코인은 사람들이 마약을 구입할 때까지는 쓸모가 없었고, 그 후 그것이 돈이 되고
+1년 만에 0.01 달러에서 1000달러가 되었습니다.
+인터넷이 생기면서, 사람들이 첫번째로 한 일은 포르노를 다운로드한 것이었습니다.  
+비트코인이 만들어졌을 때 사람들이 첫번째로 한 일은 마약과 총을 사는 것이었습니다.
+ISIS는 스카이코인을 필요로 하지 않으며, 그들이 xbox 메신저와 페이스북 메신저를 사용하기 때문입니다. 그들은 암호화 화폐가 필요 없습니다.
+모든 테러 공격은 예산 증가를 의미하므로, 정부는 ISIS를 좋아합니다. 테러리즘은 큰 돈이며, 공포가 클수록 더 많은 돈을 벌 수 있습니다.
+사람들은 ISIS로부터 만은 돈을 벌어서 곧 문제를 해결할 수 있습니다. 
+소아성애자들은 또한 처음으로 i2p, tor, tails 그리고 비트메신저를 적용한 최초의 사람들이었습니다. 
+그들은 항상 새로운 암호화 화폐를 처음으로 테스트하고 있습니다. 
+당신은 관련 프로그램의 로고를 보고 어떤 종류의 사람들이 이 어플리케이션을 작성했는지를 추측할 수 있습니다.
+스카이 코인이 출시되기 2년 전부터, 지식인들과 돈 세탁을 원하는 사람들은 이미 메타 데이터를 삭제하거나 은폐하기 위한 요구사항 목록을 제시하고 
+있었습니다.  만약 제가 차세대 실크로드를 만들고 있었다면, 스카이코인과 같은 기술의 구축을 원하고 있었을 것입니다. 제가 생각하기에 모든 사람은
+이 아이디어를 가지고 있었을 것입니다.
+우리는 사람들이 이 것을 가지고 무엇을 할 것인지를 정말로 통제할 수 없습니다. 이것은 단지 피할 수 없는 진보이며, 이것은 우리가, maidsafe가, 
+또는 누군가가 그것을 하던지 상관없이 일어날 것입니다. 이것은 이미 진행되고 있습니다.(편집됨)
 
 **mike**
-looks interesting. have you seen julia, https://julialang.org/ . very impressed with its benchmarks, comparable to go
-think the best way to end terrorism is to end foreign interventionism. Last I knew, Switzerland doesn't have a problem with terrorists.
+흥미롭군요, julia를 보세요. https://julialang.org/ . 그 벤치마킹에 매우 감동했으며, 테러를 끝내는 최선의 방법은 외국의 개입주의를 종식시키는
+것이라고 생각합니다. 마지막으로 스위스는 테러리즘 문제가 없다는 것을 알기 바랍니다.
 
 **arc-over-water**
-killary and obomba
+킬러리와 오밤마
 
 **michaelthecryptoguy**
-Sad but true.
+슬프지만 진실이군요.
 
 **mike**
-and the bushes
+그리고 부시들
 
 **synth**
-uploaded this image: Screenshot from 2017-06-29 14:42:25.png Add Comment
+업로드 이미지: Screenshot from 2017-06-29 14:42:25.png 댓글 추가
 
 **synth**
-uploaded this image: Screenshot from 2017-06-29 14:41:55.png Add Comment
+업로드 이미지: Screenshot from 2017-06-29 14:41:55.png 댓글 추가
 
 **arc-over-water**
-fake news on an amazing level... sandy hook.. 911
-moon landing... Stephen Hawking...
-anyways..
+놀라운 수준의 가짜 뉴스... 샌디 훅..911
+달 착륙...스티븐 호킹..
+어쨌든..
 
 **charles**
-North Korea also does not have a problem with terrorism :)
+북한 역시 테러문제는 없습니다.:)
 
 **arc-over-water**
-Sky! the limit
+스카이! 그 한계
 
 **mike**
-don't even have to go to that level, just the current ongoing farce about Russian intervention in the election and supposed ties to Trump team members. War is the health of the corporate state.
+선거에 대한 러시아의 개입과 현재 트럼프 팀원들과의 관계에 대해 현재 진행되고 있는 연극같은 수준까지 갈 필요조차 없습니다. 
+전쟁은 기업과 국가의 원동력입니다.
 
 **synth**
-terrorist attacks are now advertising events for nike; they are fighting each other for who gets the product placement in the latest ISIS attack. It keeps people glued to their televisions and otherwise people would not watch the news. Even terrorist attack keeps people on the television and the fortune 500 fight each other, to get the ad spots for the people glued their television.
-The governments and companies race in, like sharks with the latest "surveilence" bill to get the governments to buy billions of dollars of useless equipment from them. The government agencies all rush in to influence the press and get budget increases passed.
-Its just insanity. They only care about money.
+테러공격은 나이키를 위한 홍보 이벤트입니다.; 최근 ISIS 공격에서 그들은 그 제품의 광고를 따내기 위해 서로 싸우고 있습니다.
+사람들이 텔레비전에 붙어있지 않으면 그들은 뉴스를 보지 않을 것입니다. 테러 공격조차 사람들을 텔레비전에 붙여두고 있으며, 포츈 500도 서로 싸우며,
+사람들을 그들의 텔레비전에 붙여두기 위해 광고 공간을 만들었습니다. 
+정부와 기업들은 마치 상어처럼 최근의 "감시"법안을 통해, 정부가 수십 억 달러의 쓸모없는 장비를 구매할 수 있도록 하고 있습니다.
+정부 기관들은 모두 언론에 영향력을 행사하고, 예산 증액을 통과하기 위해 집중합니다. 그들은 미쳤습니다. 그들은 돈에 대해서만 관심이 있습니다. 
 
 **mike**
-it would be very inconvenient to improve relations with Russia for those making money and expanding power over escalating global tensions.
+돈을 벌며, 세계적인 긴장이 고조되는데 힘을 실어주는 사람들을 위해 러시아와의 관계를 개선하는 것은 매우 불편할 것입니다.
 
 **arc-over-water**
-wasnt the first main scandal trump attack that he weed on some prostitutes in Russia. OMG
+트럼프의 첫번째 주요 스캔들 공격은 그가 러시아의 몇몇 매춘부와 음란한 관계를 했다는 것 아니었나요? OMG
 
 **synth**
-they have oil companies and russia produces oil; so hey want any execuse for "sanctions" to force people to buy their oil instead of russian oil. They would do a war, just to stop any Russian oil pipeline to Europe.
-It just about money.
+그들은 석유 회사들이 있고 러시아도 석유를 생산합니다.; 그래서 그들은 러시아 기름 대신 그들의 기름을 사게 하기 위해 "제재"를 원합니다.
+그들은 전쟁을 원하며, 단지 유럽으로 흘러들어 오는 러시아 오일 파이프라인을 막기를 원합니다.
+그것은 단지 돈에 관한 것입니다. 
 
 **arc-over-water**
-Putin is actually kicking some ass with his speeches the last years.
+푸틴은 실제로 몇 년동안 그의 연설로 몇몇의 엉덩이를 걷어차고 있습니다.
 
 **synth**
-if russia gave me free prostitutes, I would pee on them too, lol. Why not? (edited)
+만약 러시아가 내게 공짜 매춘부를 주면, 나는 그들 위에서 오줌을 누겠습니다. lol. 왜 안되나요?(편집됨)
 
 **mike**
-don't forget Pussygate - the press sat on the tape for 10 years until 3 weeks before the election, instead of during the primaries.
+푸시게이트를 잊지 마세요. 언론은 선거 3주 전부터 10년을 위해 테이프를 셋팅합니다. 그들의 입장은 영구적인 것이 아니예요.
 
 **arc-over-water**
-crazy shit out there...
-time for crypto to shine..
+거기는 미쳤어...
+암호코인이 빛을 발할 시간...
 
 **xano**
-I just wonder how services like mega would have ended up with Skycoin
+저는 mega와 같은 서비스가 스카이코인과 어떻게 이어질 지가 궁금합니다.
 
 **synth**
-the "Y2K" was also excuse, to sell tens of billions of dollars of "upgrades" to government and corporations. They told them "give us your money or the sky will fall".
-terrorism is the same story, its just turned into a money making scam. 90% of the surveilence crap is just companies finding excuses to lobby the government to buy over priced equipment, so they can make money. They do no even know what to do with the data they collect. They are doing insider trading and rigging markets and all sorts of crap with the data and then panicing when people start using HTTPS because its harder for them to keep making money the same way.
+"Y2K" 또한  정부와 기업에 수천억 달러의 "업그레이드"를 판매하는 변명거리 중 하나였습니다.
+그들은 정부와 기업에게 "우리에게 돈을 주던지 세상이 망하던지"라고 말했습니다.
+테러리즘 또한 똑같은 이야기이며, 그들은 단지 사기로 돈을 만듭니다. 조사의 90%는 단지 기업들이 정부가 그들의 장비를 단가 이상으로 구입하게 하기 위한 로비이고, 따라서 그들은 돈을 벌 수 있습니다. 그들은 그들의 데이터로 무엇을 해야 하는지조차 알지 못합니다.
+그들은 내부 거래 및 시세조작을 하고 있으며 사람들이 HTTPS를 사용하기 시작할 때 데이터를 긁어모아 분류합니다.
+그들이 같은 방식으로 돈을 버는 것이 힘들기 때문입니다.
 
 **arc-over-water**
-Mega2 is about to show its prototypes
+Mega2는 프로토타입을 공개하려고 합니다.
 
 **synth**
-you have mom and pop local police departments, buying $150,000 string ray cell phone interception equipment that is NSA level, who could not even afford it, but its paid for out of 10 billion dollar DHS "terror" fund to buy useless equipment for local police. To "fight terrorism". Its really a joke.
+당신은 엄마와 지역 경찰이 있고,그들은 NSA 수준의 15만 달러짜리 스트링 레이 휴대폰 차단 장비를 사는 것을, 감당할 수 없습니다.
+하지만 그들은 "테러"기금으로 쓸데없는 장비를 사기 위해 지역 경찰에게 100억 달러를 지불했습니다. "테러와 싸우기 위해서 말입니다. 
+이것은 진짜 농담입니다.
 
 **arc-over-water**
-Sky list of aims over the next two years?
-Next ICO cost and how it will be released?
+스카이의 향후 2년의 목표는 무엇입니까?
+다음 ICO의 가격과 출시 방법은 어떻게 됩니까?
 
 **synth**
-people know that companies like apple and goolge are required to hand over all their data to the government. including messages, so why would anyone use imessanger or icloud?
-So they are staging fake events with "police cant break the 4 digit pin on an iPhone and its unbreakable" when they can actually trojan the phone from the carrier, etc and have all sorts of insane mandatory backdoors.
-So we are heading towards a decentralized internet and these new apps, as people get sick of being tracked like animals.
+사람들은 애플(apple)과 goolge 같은 기업들이 모든 데이터를 정부에 넘겨주어야 한다는 것을 알고 있습니다.
+메시지를 포함합니다., 그래서 왜 imessanger나 icloud를 사용하겠습니까?
+그리고 그들은 "경찰은 아이폰의 4자리 디지털 핀을 해제할 수 없고, 그것은 해제될 수 없다."라는 가짜 이벤트를 준비합니다.
+그 폰은 필수적으로 모든 종류의 망할 백도어를 가지고 있으며, 그들에게 정보가 넘어가게 됩니다.
+따라서 우리는 분산 인터넷과 이러한 새로운 앱으로 향하고 있습니다.
+사람들은 동물처럼 추적당하는 것에 지쳤습니다.
 
 **michaelthecryptoguy**
-@synth What is your background? Can you tell me a little about your prior experience, regardless of what area it was in? (edited)
+당신의 배경이 어떻게 됩니까 @synth? 어떤 분야에 종사했던지 간에 관계없이 당신의 이전 경력을 조금 말해주실 수 있나요?(편집됨)
 
 **synth**
 
-> Sky list of aims over the next two years?
+> 스카이의 향후 2년의 목표는 무엇입니까?
 
-Get meshnet working Get BBS and first demo apps working Get VPN working and get it to users List on more exchanges Build up community Improve the wallet, fix website, translations into more languages ec
+매쉬넷을 작동시키기 위해 BBS를 가져오고 첫번째 데모 앱을 실행 및 VPN을 작동시키고 커뮤니티에 의해 개선된 지갑의 거래에서 사용자 목록을 가져오고,
+웹 사이트를 보완하고, 여러나라 언어로 번역하는 등의 작업을 하고 있습니다.
 
 **arc-over-water**
-Also the two Chinese guys who wrote the technical whitepaper, the scholars, are part of the team?
+또한 기술 백서를 작성한 두 명의 중국인, 박사들이 팀의 일원이 되었습니까?
 
 **synth**
-@synth What is your background? Can you tell me a little about your prior experience, regardless of what area it was in?
-I did a lot of things. video games, hedge fund/finance, crypto, investment stuff etc... Now am I a sort of project manager.
+당신의 배경이 어떻게 됩니까 @synth? 어떤 분야에 종사했던지 간에 관계없이 당신의 이전 경력을 조금 말해주실 수 있나요?
+저는 많은 일을 해 왔습니다. 비디오 게임, 헤지 펀드/금융, 암호, 선물 투자 등...이제는 일종의 프로젝트 매니저입니다.
 
 **charles**
-How will the price of skycoins be determined for the next ICO, I, suppose it cannot be above market price, else people would not buy it, but too far below would depreciate the coin
+다음 ICO에서 스카이코인의 가격이 어떻게 결정 될까요? 제가 생각하기에 그것은 시장 가격보다 높을 수 없으며, 만약 그렇다면 사람들이 그것을 
+사지 않겠죠. 그러나 너무 낮으면 코인 가치가 떨어질 것입니다.
 
 **arc-over-water**
-do they want high price at this point or well even distribution to the best placement of people?
+그들은 이 시점에서 높은 가격을 원할까요 아니면 사람들에게 최고의 홍보효과를 위해 분배를 하는 것일까요?
 
 **synth**
 
-> Also the two Chinese guys who wrote the technical whitepaper, the scholars, are part of the team?
+> 또한 기술 백서를 작성한 두 명의 중국인, 박사들이 팀의 일원이 되었습니까?
 
-One of the chinese guys has nothing to do with it. He is a professor that put his name on paper his graduate student published. And now the professor wants to hide the paper, because he thinks the chinese government is cracking down on bitcoin; but he is wrong and the government doesnt care and the paper is in english so they cant read it anyways.
-And the other one is a core ETH developer. Chen was core ETH and wrote the golang implementation of Ethereum. He is not very public and does not want to be in spotlite or bothered.
-most of the contributors for skycoin are in the background or hiding actually (edited)
-many of the ETH people are all whoring themselves out to advisor boards to various tokens, or dozens of tokens and ICOs; but most of the serious crypto people are very private and hiding themselves. They do not want to be known, do not want to promote or advertise themselves and they are in the background.
-Or they have too much money already and just want to hide. They are also lazy because they do not have to work anymore, or they are busy with other things.
-they also want to avoid taxes and being targetted for theft and do not want attention from government
-skycoin cannot have a "Team" or "Advisor Board" on website, because we asked everyone and no one wants to be public or wants to be in a public position....
+중국인 중 한 명과는 아무 관계가 없습니다. 그는 그의 대학원생이 출판한 논문에 그의 이름을 올린 교수입니다. 
+그리고 지금 그 교수는 중국 정부가 비트코인을 단속하고 있다고 생각하기 때문에, 그 논문을 숨기기를 원했습니다.;
+그러나 그는 틀렸고 그 정부는 그것을 다룰 수 없었으며 백서가 영어로 되어 있었기 때문에, 어쨌든 그들은 그것을 읽을 수 없었습니다.
+그리고 다른 한 명은 이더리움 코어 개발자입니다. Chen은 코어 이더리움을 개발했으며 golang으로 이더리움을 구현하였습니다.
+그는 비공개되어 있으며 스포트라이트를 받는 것을 원하지 않습니다.
+스카이코인의 모든 기여자들은 비공개되어 있습니다.(편집됨)
+많은 이더리움 개발자들은 매우 다양한 수십 개의 토큰 및 ICO에 대한 조언자 그룹에 참여하고 있습니다.;
+하지만 대부분의 암호화 업계 종사자들은 매우 익명으로 활동합니다. 그들은 그들이 알려지는 것을 원치 않으며, 그들을 홍보하거나 광고하고 싶어하지 
+않습니다. 그리고 그들은 항상 뒤에 숨어있습니다.
+또는 그들은 이미 너무 많은 돈을 가지고 있고, 단지 그것을 숨기기를 원합니다. 
+그들은 더 이상 일할 필요가 없기 때문에, 게으르거나 다른 것을 하기 위해 바쁩니다. 
+또한 그들은 세금을 피하고 도난을 당하거나 정부의 관심을 끌지 않기를 원합니다. 
+우리는 모두에게 물어보았으며, 아무도 공개되기를 바라지 않았기 때문에, 스카이코인은 웹 사이트에 "팀" 또는 "고문위원회"를 가질 수 없습니다.
+공개된 위치...
 
 **arc-over-water**
-yes best to live in a country your not citizen of and earn money from a country your not living in... Been doing it for ten ears, way less stress, (edited)
+네, 가장 좋은 것은 당신이 시민이 아니면서 나라에 살고 있고, 그 나라에서 돈을 버는 것이지요... 이것을 10년 동안 하고 있는데... 
+스트레스를 덜 받아요.(편집됨)
 
 **synth**
-many early bitcoin people, who identified themselves publicly on twitter; they cannot travel to brazil or certain countries without risking being kinapped and ransomed for money
+많은 초기 비트코인 투자자들은, 그들의 신원을 트위터에 공개했죠; 그들은 몸값을 지불하지 않는 한 브라질이나 특정 국가를 여행할 수 없습니다.
 lololol
 
 **arc-over-water**
-vitalic knows kung fu maybe,,, well he speaks Chinese..
+vitalic은 어쩌면 쿵푸를... 잘 할지도 그는 중국말을 할 수 있죠..
 
 **charles**
-Do you think skycoin not having a public figure will negatively affect adoption?
+당신은 스카이코인의 공개적 지표가 없는 것이 시장에 부정적인 영향을 줄 것이라고 생각합니까?
 
 **arc-over-water**
-i think it has.. 6 years on and quiet forums and slack
+제가 생각하기에 이것은.. 6년동안 포럼과 slack에서 조용히 활동했다고 생각합니다.
 
 **synth**
-we can buy public figures or an adviser board; but they would not have anything to do with project except to put their name on it to create confidence for public; which is what all these advisor boards really are
+우리는 공개적 지표나 고문단을 살 수 있습니다.; 그러나 대중을 위해 자산감을 갖기 위해서 프로젝트에 그들의 이름을 쓰는 것을 제외하고는 아무것도 하고 있지 않습니다.; 모든 고문단들은 실제로 존재합니다.
 
 **arc-over-water**
-in the background assuming tek development.
-Next ICO cost and how it will be released?
-github is always active...
+기술 개발은 모두 백그라운드에서 일어나는군요.
+다음 ICO 가격과 출시 방법은 어떻게 됩니까?
+github가 항상 활동적이군요...
 
 **synth**
-i really do not know
-about the next ICO
+저는 정말로 다음 ICO에 대해 알지 못합니다.
 
 **arc-over-water**
-ok
+알겠습니다.
 
 **synth**
-it is around the 20th of next month. and will be 1% to 10% of the skycoin. I am not sure the exact number is set
-and it will probably be a fixed price
+그것은 다음 달 20일 쯤일 겁니다. 그리고 스카이코인의 1%에서 10%정도가 배포될 것입니다. 
+이것이 정확한 숫자일지 알 수 없으며 아마도 고정가격일 것입니다.
 
 **dr10**
-this ama is a marathon :trollbounce: nice!
+이 ama는 마라톤이네요: 트롤바운스: 최고입니다!
 
 **arc-over-water**
-how much of the 100 million is obligated to your team and the people who funded it?
+1억 개중 얼마만큼의 양이 당신의 팀과 당신의 팀을 지원한 사람들의 몫인가요?
 
 **synth**
-but then followed by a weekly auction or second priced auction for a fixed number of coins, that will occur every week for 8 weeks; but not sure how many coins or if it will actually happen
+그러나 정해진 수의 코인을 가지고 주간 판매 또는 2차 가격 판매가, 8주동안 매주 실시될 것입니다.;그러나 얼마나 많은 코인이 분배될 것이며 
+그것을 실제로 수행할 것인지는 확신할 수 없습니다.
 
 **arc-over-water**
-so if its a high price it is 1% and low price it could get to 10%
+그래서 분배량이 1%일 경우에는 높은 가격이고 10%일 때는 낮은 가격이 되는 것이지요.
 
 **synth**
 
-> how much of the 100 million is obligated to your team and the people who funded it?
+> 1억 개중 얼마만큼의 양이 당신의 팀과 당신의 팀을 지원한 사람들의 몫인가요?
 
-The people who funded skycoin, did not receive anything for it. They have no entitlement to the coins.
-they had to buy in at ICO like everyone else. Even the developers working on it, had to buy in.
+스카이코인에 자금을 지원한 사람들은, 아무 것도 받지 못했습니다. 그들은 코인에 대한 배당권이 없습니다.
+그들은 다른 모든사람들과 마찬가지고 ICO에서 구매해야 했습니다. 그것을 개발하는 개발자조차도 구매해야 했습니다.
 
 **arc-over-water**
-ok so they have already been looked after in the 10c ICO round
+네, 그래서 그들은 이미 10c ICO에 참여했습니다.
 
 **synth**
-i think the next ICO is mostly marketing event, and to "get it over" with. We are in a bubble now, so we should raise money now, before the ICO bubble pops. Is what people are telling us.
-we cannot spend more then 50 million, so selling an insane number makes no sense. 10 to 15 million is probably reasonable, for next 3 years. And that is with a really good full time marketing team, and trippling number of developers AND funding several parrallel hardware projects.
+저는 다음 ICO가 대부분 마케팅 이벤트라고 생각하며, 그리고 그것을 "이것을 끝내라"로 생각합니다. 우리는 지금 버블에 빠져 있으며, 
+그래서 우리는 ICO 버블이 사라지기 전에 지금 돈을 모아야 합니다. 사람들이 우리에게 무엇을 말하고 있나요.
+우리는 5천 만 달러 이상을 쓸수 없기 때문에, 말도 안되는 양을 파는 것은 말이 안 됩니다. 아마 3년에 걸쳐 10에서 15백만 달러의 양을 판매하는 것이 
+합리적일 것입니다.
+그리고 그것은 정말 훌륭한 풀 타임 마케팅 팀과 함께하고 있으며, 개발자 수를 줄이고 병렬 하드웨어 프로젝트에 자금을 지원합니다.  
 
 **mike**
-My approach to Skycoin is regardless how much of a financial return it might provide, it is an investment into producing a future I want to see.
-Also look forward to earning it by running nodes.
+스카이코인에 대해 나는 얼마의 재정적인 수익을 벌어들일 수 있느냐와 관계없이 그것을 지원하고 싶군요. 그것은 내가 꿈꾸는 미래를 만들어주는 
+투자입니다. 그리고 노드를 운영함으로써 수익을 얻으십시오.
 
 **arc-over-water**
-So that could be you release 10,000,000 coins and get $10,000,000 dollars for your covering expenses next three years
+그래서 당신은 10,000,000개의 코인을 배포하고, 3년에 걸쳐 10,000,000달러를 얻을 수 있습니다.
 
 **charles**
-Can a person with limited technical capabilities run a node?
+기술능력이 없는 사람이 노드를 운영할 수 있습니까?
 
 **arc-over-water**
-or $20,000,000 as it goes
+또는 20,000,000달러를 벌겠죠.
 
 **synth**
-the people who are going to pump the coin, want us to sell off as much as possible. They are pressuring us to do that.
-However, if we sell fewer coins, then the price per coin will be higher.
-If we only sell 10 million in coins, then the price can go up a lot higher than if we sold 500 million in coins.
-I think EOS is going to raise a billion dollars and I have no idea what they will with the money, except use it to buy EOS and drive the price up or some scam. They are not going to spend it on development. lol
-> Can a person with limited technical capabilities run a node?
+코인 가격을 펌핑하는 사람들은, 가능한 우리가 많이 팔아치우기를 원합니다. 
+그들은 우리에게 그렇게 하도록 압력을 가하고 있습니다.
+그러나 만약 우리가 적은 양의 코인을 판매한다면, 코인 당 가격이 올라갑니다.
+만약 우리가 단지 천만 개의 코인을 판매한다면, 5억 개의 코인을 팔 때보다 가격이 훨씬 더 오를 수 있습니다.
+나는 EOS가 10억 달러를 모으고 있으며, 그들이 EOS를 구매하거나 가격을 올리고 또는 사기를 치는 것을 제외하고는 그들이 그 돈으로 무엇을 할 것인지를
+전혀 알 수 없습니다. 그들은 그것을 개발에 사용하지 않을 것입니다. lol
+> 기술능력이 없는 사람이 노드를 운영할 수 있습니까?
 
-eventually, yes. maybe not right now. after tutorials, yes
+결국, 네, 아마도 지금은 아니겠지만요. 튜토리얼 이후에는 가능합니다.
 
 **arc-over-water**
-EOS seems like it is trying to go bear bones and not be as complicated as ETH...
+EOS는 아직까지 기반이 굳어지지 않아보이네요... 그리고 이더리움과 비교할 수 없을 것....
 
 **mike**
-I think it is smart to hold a lot for distribution to node operators as a replacement to mining for a good distribution, also selling some to have distribution among those who are interested but not technically inclined to run nodes.
+제가 생각하기에는 노드 운영자를 위해 많은 코인을 할당하는 것이 현명하다고 생각되네요. 나은 분배를 위해서 노드운영자는 채굴을 대체하고 있으며, 
+또한 이것에 관심은 있지만 노드를 운영할 기술이 없는 사람들을 위해서 판매를 할 수 있습니다. 
 
 **synth**
-So that could be you release 10,000,000 coins and get $10,000,000 dollars for your covering expenses next three years
-The coin price is like $4 or almost $5 at high. It will be at $5 by ICO I think, atleast. The market cap has doubled every 40 days, for a while now.
-10 million coins at $5 per coin, is 50 million.
-We have to distribute coins via the skywire nodes, to make it fair; because ICO is not a good way to get coins into the hands of users. Its only good for fund raising and for whales.
-We decided that we will distribute most of the coins to users and just use sales to whales, to fund development.
+그래서 당신은 10,000,000코인을 운영할 수 있으며 다음 3년 동안 당신의 기여도에 따라서 10,000,000달러를 얻을 수 있습니다.
+코인 가격은 4달러 또는 거의 5달러와 같습니다. 적어도 ICO가격으로 5달러를 생각합니다. 시가 총액은 40일 마다 두 배가 되었습니다.
+코인 당 5달러이며 1000만 동전은 5천 만 달러 입니다. 
+우리는 스카이와이어 노드를 통하여 코인을 공정하게 분배합니다.;
+왜냐하면 ICO는 코인을 사용자의 손에 넘기는 좋은 방법이 아니기 때문입니다.
+그것은 단지 좋은 기금모금 방법이며, 고래를 위한 것입니다.
+우리는 대부분의 코인을 사용자에게 배포하고, 고래에 대한 판매를 통해 개발 자금을 조달하기로 결정했습니다.
 
 **arc-over-water**
-there must be ways to spread to diverse groups the 10,000,000 coins?
+반드시 다양한 그룹으로 분할하여 10,000,000코인을 분배해야 합니까?
 
 **synth**
-the problem is that all ICOs end up going to less than 20 whales
+문제는 모든 ICO가 20 마리 이하의 고래에게 돌아가는 것입니다.
 
 **arc-over-water**
-every member of a altcoin slack gets a coupon invite
-If an ICO knows their customer that can be prevented..
+모든 altcoin slack멤버는 초대 쿠폰을 받았습니다.
+만약 한 ICO가 그들의 고객에 대해 알고있다면 그것을 예방할 수 있습니까?..
 
 **synth**
-there are people who own a large percentage of ETH and they want to diversify; they can gamble 20 million in an ICO and could make 50x more, but if they lose it, then its a slight loss; they have so much ETH that they cannot even sell it or convert it, without tanking the market
+이더리움의 많은 비율을 소유하고 있는 사람들 중 다양성을 원하는 사람들이 있습니다.;그들은 ICO에서 2천만 달러를 도박할 수 있으며 50배를 더 벌 수 
+있습니다. 하지만 그들이 손실을 입는다면, 약간의 손실만이 있습니다.;그들은 너무나 많은 이더리움을 가지고 있기 때문에 시장을 꽉 채우지 않으면
+그것을 팔거나 변환할 수 없습니다.
 
 **arc-over-water**
-in one day every altcoin slack member of every altcoin could get a btc address used once in their pm, allowed a max amount sent etc..
+모든 알트코인(altcoin)에 대해서 모든 altcoin slack 멤버가 1개의 비트코인 주소로 살 수 있는 1일 최대 금액은...
 
 **synth**
-yes, ideally, that might work
-we have been doing OTC sales at market price; with a cap of 10 BTC and that works well
+네, 이상적으로는, 그것이 맞습니다.
+우리는 시장 가격으로 OTC 판매를 해 왔습니다.; 10BTC의 캡으로 잘 해왔습니다. 
 
 **arc-over-water**
-do the OTC reflect in the blockchain? (edited)
+OTC가 블록체인에 반영됩니까?(편집됨)
 
 **synth**
-but we have single whales that want to put in 700 BTC and each one individually, is larger than whole individuals doing the OTC sales
-OTC is "over the counter", or direct sale; when people private message a developer and ask to buy
+하지만 우리는 700BTC를 투자하기를 원하는 단일 고래가 있으며, 그들은 각자 개별적으로 투자하고 싶어하고, 그것은 OTC 판매 전체보다 큰 금액입니다.
+OTC는 "카운터 이상"이거나, 직접 판매입니다.; 사람들이 개발자에게 개인적인 메시지를 보내거나, 구매방법을 물어볼 때 가능합니다.
 
 **arc-over-water**
-ok so private sales are happening
+네, 그래서 개별 판매는 발생하는군요.
 
 **mike**
-uploaded and commented on this image: TEC chart.png 1 Comment Here is a sample method based on power law for pricing I have planned for Ark based Token Exchanges for projects, including funding Ark/Skycoin based nodes. As more as sold, the price increses by a power law so people can enter at the irsk and expected ROI combination they feel comfortable without being pressured into hasty emotional decisions by FOMO.
+이 이미지를 업로드하고 댓글을 달았습니다.: TEC chart.png 1개의 댓글이 있습니다. 다음은 Ark/Skycoin 기반 노드에 대한 자금 지원을 포함하며, Ark 기반 토큰 교환 프로젝트에 대해 계획된 가격 책정방법에 기반한 샘플 방법입니다. 더 많이 팔리는 만큼, 가격은 힘의 논리에 기반합니다. 
+그래서 사람들은 리스크가 있을 수도 있으며, FOMO에 의해 성급한 결정을 내리지 않는다면 마음 편하게 ROI를 넘을 수 있습니다.
 
 **mike**
 *irsk=risk
-so entering on any part of the curve looks the same as any other part.
+그래서 커브의 어떤 부분에 진입하더라고 그것은 다른 것과 동일하게 보입니다.
 
 **synth**
 hmmm
-how does this work?
-the more money you put in, the more you pay?
+어떻게 되나요?
+더 많은 돈을 투자할 수록, 더 많이 벌게 되나요?
 
 **arc-over-water**
-but as you do these OTC sales it reflects here in distributed? http://explorer.skycoin.net/blocks
+하지만 당신이 OTC 판매를 할 때 이것이 분배에 반영이 됩니까? http://explorer.skycoin.net/blocks
 
 **mike**
-here is a link to the spreadsheet, has the formulas and table of calculations for the graph, https://docs.google.com/spreadsheets/d/1en9lqzBIuHgp0-Q3ohoq3yJUe1lJcOK9U4bF2TiXZew/edit?usp=sharing
-yes, the more that is put in, the higher the price.
-it will take some experience to determine the best parameters to prevent instant sell-off while not stalling the exchange indefinitely, and different project might be best suited for different exchange rates over time period.
+이것은 스프레드 시트에 대한 링크이며, 그래프에 대한 수식과 계산 테이블이 있습니다.
+https://docs.google.com/spreadsheets/d/1en9lqzBIuHgp0-Q3ohoq3yJUe1lJcOK9U4bF2TiXZew/edit?usp=sharing
+네, 많이 투자될 수록, 가격이 더 높아집니다. 
+패닉셀을 막기 위해 최적의 조건을 결정하기 위해서는 경험이 필요하며, 다른 프로젝트는 기간에 따라 다른 거래소 환율이 가장 적합 할 수도 있습니다.
 
 **synth**
-we have a really good strategy now
-We can distribute coins to top content producers on the BBS
-to people doing bountries (like skycoin logo, sticker design etc)
-to people who want to do development (mobile wallet etc, some features for bbs and bug fixes)
-Then massive substained distribution, over time to the people running the skywire nodes.
-Then disribution also to nodes hosting content on CXO.
-Then distribution to people coming on to platform who are bringing user communities with millions of people (we have been talking to these people for years and they do not have real developers, so we have to help them; they only have web designers and curators and community managers but cannot actually develop anything new).
+이제 우리는 정말 좋은 전략을 가지고 있습니다. BBS의 우수 컨텐츠 제작자에게 코인을 배포 할 수 있습니다 (예 : 스카이코 로고, 스티커 디자인 등). 
+개발을 원하는 사람들(모바일 지갑 등, bbs 및 버그 수정)
+그 다음 스카이와이어 노드를 실행하는 사람들에게 시간이 지남에 따라 큰 규모의 배당금을 분배할 것입니다.
+그 다음 CXO에서 컨텐트를 호스팅하는 노드에 배포 합니다. 
+그 다음 수 백만 명의 사용자 커뮤니티가 있는 플랫폼에 오는 사람들에게 배포합니다. 
+(우리는 수 년 동안 이 사람들과 이야기를 해 왔으며 실제 개발자가 없으므로 도움을 받아야합니다. 
+웹 디자이너와 큐레이터만 있습니다.; 그들은 커뮤니티 관리자이지만 실제로 새로운 어떤 것도 개발할 수 없습니다).
 
 **mike**
-like a long term term ArkSpace project for space exploration and development will be sold over a lot longer time frame than funding an index coin bridged to Ark.
-yes, and either way, the project can award blocks of tokens to contributors other than just for money.
-I'm a fan of the Slicing Pie method.
+우주탐사 및 개발을 위한 장기간에 걸친 ArkSpace 프로젝트와 같은 것은 Ark와 연결되는 인덱스 코인보다 더 긴 시간동안 판매될 것입니다.
+네, 그리고 어느 방식이던지 간에, 그 프로젝트는 기여자에 대한 보상으로 단지 돈을 지불하는 것보다 토큰 블럭을 제공할 수 있습니다.
+나는 Slicing Pie 방식의 팬입니다.
 
 **arc-over-water**
-Ok so your saying it will be between 1%-10% next month to get funding and start the marketing campaign. Then after that distribution then there are monthly small releases of ICO and the majority being bounties for services rendered. and nodes etc
+그렇다면 다음 달은 1 % -10 % 사이가 될 것이므로 자금을 조달하고 마케팅 캠페인을 시작하십시오. 
+배포 이후, 매월 작은 규모의 ICO가 실시되며, 대부분은 공지된 서비스에 대해 바운티가 있습니다. 노드 등
 
 **mike**
-http://slicingpie.com/ Slicing Pie Perfect Equity Splits for Bootstrapped Startups Slicing Pie is a formula that allows founders to create a PERFECTLY FAIR equity split between founders, investors, partners and employees. (92kB)
-Skycoin is very similar, but doing it manually with adjustment.
+http://slicingpie.com/ Slicing Pie는 부트스트랩 된 신생기업을 위한 완벽한 분할 공식입니다. 이것은 창립자가 
+창립자, 투자자, 파트너 및 직원 간의 형평 분배를 생성할 수 있게 해주는 공식입니다. (92kB)
+스카이코인은 매우 유사하지만, 이것은 수동으로 조정합니다.
 
 **synth**
-yes
-what i am interested in, is if we can block the BBS up and get alot of users with the incentives
-every dollar in coins we sold over OTC, drove the skycoin market cap up $4
-we would sell coins, then price explodes the next week; because people promote it on twitter and blog about it
-skycoin needs to get on more exchanges
+네,
+제가 관심있는 것은 만약 우리가 BBS를 통해 블럭을 모으고, 많은 사용자를 모아 OTC를 통해 팔린 코인으로 인센티브를 얻고,
+스카이코인 시장가를 4달러까지 올린다음 우리가 코인을 판매한다면, 다음 주의 가격은 폭등할 것입니다.; 왜냐하면 사람들이 그것을 트위터와 블로그에
+홍보할 것이기 때문입니다. 스카이코인은 더 많은 교환이 필요합니다.  
 
 **synth**
-I have to sleep now. LMAO. We should end AMA soon
+저는 지금 자야겠어요. LMAO. 우리는 이제 AMA를 끝내야만 해요.
 
 **arc-over-water**
-cool thanks for your time... haha 3.17 am here
+시간 내 주셔서 감사합니다...하하 지금 벌써 3:17 AM이네요.
 
 **synth**
-4 hours?
+4시간 동안?
 
 **dr10**
 XD
 
 **synth**
-is there an archive for the AMA?
+AMA를 위한 기록이 유지되나요?
 
 **dr10**
-reddit hopefully :joy:
+reddit이 좋겠어요:기뻐해요:
 
 **michaelthecryptoguy**
-Thank You for taking your time to answer everything in complete detail. It was nice that you cared enough to make sure everything was answer very thoroughly.
+궁금한 점에 대해 자세하게 답변해 주셔서 감사합니다. 당신이 모든 답변에 충분히 신경 쓰는 것이 만족스러웠습니다.
 
 **boldninja**
-@michaelthecryptoguy can you copy everything and make it reddit friendly?
-thanks @synth for taking the time for this AMA it was :mindblown: really interesting stuff
+@michaelthecryptoguy 모든 것을 카피한 다음 reddit에 게시할 수 있습니까?
+감사합니다.  @synth 이 AMA에 시간 내 주셔서 감사합니다.:mindblown :정말 흥미로운 물건이로군요.
 
 **techbytes**
 오늘은 마라톤 세션이었네요.
 
 **michaelthecryptoguy**
-I sure can. As long as jarunik hasn't already started. (edited)
+제가 그것을 할 수 있어요. jarunik이 이미 그것을 시작하지 않았다면요.(편집됨)
 
 **mike**
 synth와 함께 해 주셔서 대단히 감사합니다. 다음 기회에 다시 참여해주신다면 감사하겠습니다.
